@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publiskais piedāvājums | FITURA</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    body { background: var(--bg, #12011b); }
+    .offer { padding: calc(120 * var(--px)) 0 calc(80 * var(--px)); }
+    .offer__inner {
+      width: 100%;
+      max-width: calc(1200 * var(--px));
+      margin: 0 auto;
+      padding: 0 var(--container-pad);
+    }
+    .offer__top {
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: calc(16 * var(--px));
+      margin-bottom: calc(26 * var(--px));
+      flex-wrap: wrap;
+    }
+    .offer__title {
+      font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      font-weight: 600;
+      font-size: calc(44 * var(--px));
+      line-height: 1.05;
+      margin: 0;
+      letter-spacing: 0.01em;
+      text-shadow: var(--shadowText);
+    }
+    .offer__nav {
+      display:flex;
+      gap: calc(12 * var(--px));
+      align-items:center;
+      flex-wrap: wrap;
+    }
+    .offer__chip {
+      display:inline-flex;
+      align-items:center;
+      padding: calc(10 * var(--px)) calc(16 * var(--px));
+      border-radius: var(--radius-pill);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.92);
+      text-decoration:none;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+    .offer__chip:hover {
+      transform: translateY(calc(-1 * var(--px)));
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(124,31,255,0.35);
+    }
+    .offer__card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: calc(20 * var(--px));
+      padding: calc(26 * var(--px)) calc(24 * var(--px));
+      backdrop-filter: blur(10px);
+    }
+    .offer__h2 {
+      font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      font-weight: 600;
+      font-size: calc(22 * var(--px));
+      line-height: 1.25;
+      margin: calc(20 * var(--px)) 0 calc(10 * var(--px));
+      color: rgba(255,255,255,0.92);
+    }
+    .offer__h3 {
+      font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      font-weight: 600;
+      font-size: calc(18 * var(--px));
+      line-height: 1.25;
+      margin: calc(18 * var(--px)) 0 calc(8 * var(--px));
+      color: rgba(255,255,255,0.88);
+    }
+    .offer__p {
+      margin: 0 0 calc(12 * var(--px));
+      color: rgba(255,255,255,0.78);
+      line-height: 1.65;
+      font-size: calc(16 * var(--px));
+    }
+    .offer__sp { height: calc(10 * var(--px)); }
+    .offer__table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: calc(14 * var(--px)) 0 calc(18 * var(--px));
+      border-radius: calc(16 * var(--px));
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.15);
+    }
+    .offer__table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+    }
+    .offer__table td {
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: calc(10 * var(--px)) calc(12 * var(--px));
+      vertical-align: top;
+      color: rgba(255,255,255,0.78);
+      font-size: calc(15 * var(--px));
+      line-height: 1.5;
+      white-space: normal;
+    }
+    .offer__table tr:nth-child(odd) td {
+      background: rgba(255,255,255,0.03);
+    }
+    @media (max-width: 900px) {
+      .offer { padding-top: 90px; }
+      .offer__title { font-size: 34px; }
+      .offer__inner { padding: 0 18px; }
+      .offer__card { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="offer">
+    <div class="offer__inner">
+      <div class="offer__top">
+        <h1 class="offer__title">Publiskais piedāvājums</h1>
+        <div class="offer__nav">
+          <a class="offer__chip" href="index.html">← Atpakaļ uz sākumu</a>
+          <a class="offer__chip" href="../offer.html">EN versija</a>
+        </div>
+      </div>
+      <section class="offer__card" aria-label="Publiskais piedāvājums">
+<h2 class="offer__h2">Apstiprināts ar FITURA SIA valdes lēmumu </h2>
+<h2 class="offer__h2">PUBLISKĀ PIEDĀVĀJUMA Nr. 1 no 2026. gada 14. janvāra</h2>
+<div class="offer__sp"></div>
+<div class="offer__sp"></div>
+<p class="offer__p">&nbsp;Šis dokuments ir oficiāls piedāvājums (publisks piedāvājums) no SIA FITURA LV40203634454 (turpmāk – „Izpildītājs”) un tajā ir iekļauti visi būtiskie nosacījumi, kas attiecas uz Izpildītāja sniegtajiem pakalpojumiem, kuri uzskaitīti zemāk.</p>
+<p class="offer__p">Izpildītājs noslēdz Līgumu par pakalpojumu sniegšanu (turpmāk – „Līgums”) ar jebkuru rīcībspējīgu fizisko personu, kas pieņēmusi šī piedāvājuma nosacījumus, veicot šajā piedāvājumā norādītās darbības.</p>
+<p class="offer__p">Publiskais piedāvājums ir oficiāls dokuments un tiek publicēts Izpildītāja oficiālajā tīmekļa vietnē https://www.fitura.lv un/vai izvietots visiem pieejamā vietā Kluba teritorijā.</p>
+<p class="offer__p">Šis publiskais piedāvājums balstās uz principiem, ka būtisks nosacījums fiziskās sagatavotības, fiziskās attīstības un fiziskās kultūras un veselības uzlabošanas pakalpojumu sniegšanā, veicot fiziskās kultūras un fiziskās kultūras un veselības uzlabošanas pasākumus, ir to drošība Līguma pusēm, un šo pakalpojumu sniegšana ir individualizēta.</p>
+<p class="offer__p">Saistībā ar iepriekš minēto lūdzu uzmanīgi izlasiet šī publiskā piedāvājuma tekstu. Šajā publiskajā piedāvājumā minēto darbību veikšana, kas vērsta uz tā pieņemšanu, nozīmē, ka persona, kas veic šīs darbības, pieņem visus publiskā piedāvājuma nosacījumus pilnā apjomā bez jebkādiem izņēmumiem un atrunām.</p>
+<div class="offer__sp"></div>
+<h2 class="offer__h2">1. TERMINI UN DEFINĪCIJAS</h2>
+<p class="offer__p">„Pievienošanās maksa” – maksa, ko iekasē no kluba locekļa par personīgā kluba aproces izsniegšanu klientam un tiesībām izmantot skapīti bez nosacījuma par tā ilgtermiņa nomu.</p>
+<p class="offer__p">„Kalendārais gads” – 13 (trīspadsmit) maksājumu periodi pa 28 (divdesmit astoņām) kalendārajām dienām, kopā 364 (trīs simti sešdesmit četras) dienas.</p>
+<p class="offer__p">„Maksājumu periods” – periods, kas aprēķināts kā 28 (divdesmit astoņas) kalendārās dienas, kurās tiek sniegtas Pamata pakalpojumi. Maksājumu perioda beigas ir pēdējā nākamā&nbsp;&nbsp;Maksājumu perioda diena.</p>
+<p class="offer__p">„Līguma īpašnieks” – fiziska persona vai juridiska persona, kas nodrošina saistību izpildi par pamata pakalpojumu un/vai papildu pakalpojumu apmaksu, kas tiek sniegti kluba loceklim, pamatojoties uz attiecīgo līgumu. Kluba loceklis un līguma īpašnieks var būt viena un tā pati fiziska persona.</p>
+<p class="offer__p">„Pagaidu identifikācijas līdzeklis” – QR kods, kas tiek izsniegts, ja nav kluba aproces ar piekļuves sistēmu skapītim, uz laiku, kamēr atrodaties klubā.</p>
+<p class="offer__p">„Klubs” – viens no nekustamā īpašuma objektiem, kas ir fiziskās kultūras un veselības uzlabošanas iekārta, kura var ietvert ēkas, būves, aprīkotas platības un telpas, kas aprīkotas ar speciāliem tehniskajiem līdzekļiem un paredzētas fiziskās kultūras un fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanai un norisei, kas atrodas&nbsp;&nbsp;adrese&nbsp;&nbsp;norādītajā vietā, kas norādīta 1. pielikumā publiskajam piedāvājumam, un sniedz pakalpojumus ar preču zīmi FITURA</p>
+<p class="offer__p">„Pamata pakalpojumi” – pakalpojumu komplekss, kas saistīts ar izpildītāja organizētiem un vadītiem fiziskās kultūras un fiziskās kultūras un veselības uzlabošanas pasākumiem ar preču zīmi (pakalpojumu zīmi) FITURA. </p>
+<p class="offer__p">„Kluba noteikumi” – neatņemama Līguma sastāvdaļa, proti, noteikumi, kas ir obligāti izpildāmi Līguma pusēm un nosaka un reglamentē uzvedības kārtību un Kluba pakalpojumu izmantošanas nosacījumus, tostarp drošības noteikumus, apmeklējot Klubu un izmantojot tā pakalpojumus. Kluba noteikumi ir pieejami arī tīmekļa vietnē: https://www.fitura.lv</p>
+<p class="offer__p">„Papildu pakalpojumi” – pakalpojumi, ko klubs sniedz par papildu samaksu saskaņā ar cenrādi un kas nav iekļauti pamata pakalpojumu cenā.</p>
+<p class="offer__p">„Līgums” – pakalpojumu sniegšanas līgums, kas noslēgts starp Izpildītāju un Kluba biedru (vai starp Izpildītāju, Kluba biedru un Līguma īpašnieku), Kluba biedram veicot darbības, kas vērstas uz šā piedāvājuma nosacījumu pieņemšanu, un kas ir spēkā saskaņā ar šajā piedāvājumā izklāstītajiem nosacījumiem.</p>
+<p class="offer__p">„Kluba aproce” – materiāls, uz kura ir uzrakstīts personīgais elektroniskais kods, ko klubs piešķir kluba loceklim, noslēdzot līgumu, un ko kluba loceklim izsniedz, lai nodrošinātu pakalpojumu piekļuvi skapītim. Personīgo aproci nedrīkst nodot trešajai personai. Aproces izmantošana trešajai personai, lai saņemtu pakalpojumus saskaņā ar Līgumu, nav atļauta.</p>
+<p class="offer__p">„Piekļuves ierobežojums” – klubam piederīgā pagaidu piekļuves ierobežojums kluba teritorijai, izmantojot pagaidu pasākumu, kas neļauj iekļūt klubā, vai bloķējot kluba aproci, līdz klubam piederīgais pilnībā novērš apstākļus, kas bija par iemeslu tās bloķēšanai.</p>
+<p class="offer__p">„Pirmspārdošanas periods” – periods, kurā Izpildītājs nodrošina Līguma īpašniekam vai Kluba loceklim iespēju samaksāt Pamata pakalpojumu izmaksas pirms Kluba oficiālās atvēršanas un piekļuves nodrošināšanas Pamata pakalpojumiem.</p>
+<p class="offer__p">„Cenrādis” – dokuments, kurā norādīta Pamata pakalpojumu un Papildu pakalpojumu cena. Tas tiek publicēts Izpildītāja oficiālajā tīmekļa vietnē https://www.fitura.lv un/vai izvietots klubā visiem pieejamā vietā.</p>
+<p class="offer__p">„Kluba darba laiks” – dienas un stundas, kad klubs ir atvērts apmeklētājiem. Darba laiks ir norādīts uz informācijas plāksnēm pie ieejas un/vai kluba noteikumos un/vai kluba tīmekļa vietnē.</p>
+<p class="offer__p">„Īpašais piedāvājums” – piedāvājums, kas ir spēkā akcijas laikā un stājas spēkā brīdī, kad tiek iegādātas Pamata pakalpojumi, Papildu pakalpojumi, un kura termiņš un nosacījumi ir ierobežoti laika ziņā saskaņā ar Izpildītāja rīkoto akciju. Aktuālā informācija par piedāvājumiem ir iekļauta Cenrādi.</p>
+<p class="offer__p">„Kluba biedrs” – fiziska persona, kas sasniegusi 14 (četrpadsmit) gadu vecumu, kurai ir tiesības pēc saviem ieskatiem un saskaņā ar Līguma nosacījumiem nodarboties ar fiziskām aktivitātēm Klubā, kā arī piedalīties dažādos aktīvās atpūtas un brīvā laika pavadīšanas pasākumos, apmeklējot fiziskās kultūras un veselības uzlabošanas pasākumus Klubā. Kluba biedrs un Līguma īpašnieks var būt viena un tā pati fiziska persona.</p>
+<p class="offer__p">„Kluba viesis” – persona, kas nav kluba loceklis, bet kam ir tiesības izmantot pamata/papildu pakalpojumus ar ierobežojumiem, kas noteikti šajā piedāvājumā . Kluba viesim ir pienākums ievērot visus kluba noteikumu nosacījumus un ierobežojumus.</p>
+<p class="offer__p">„Iesaldēšana” – papildu pakalpojums, kas ļauj uz noteiktu laiku pārtraukt pamata un/vai papildu pakalpojumu izmantošanu (izņemot papildu pakalpojumu „Ilgtermiņa skapīša noma”) pēc kluba locekļa vēlēšanās. </p>
+<p class="offer__p">„Ģērbtuve” – kluba telpa, kas paredzēta apģērba maiņai un nav paredzēta personīgo mantu glabāšanai.</p>
+<p class="offer__p">„Ilgtermiņa skapīša noma” – papildu pakalpojums, kas ļauj nomāt skapīti uz ilgāku laiku. </p>
+<div class="offer__sp"></div>
+<h2 class="offer__h2">2. LĪGUMA PRIEKŠMETS</h2>
+<p class="offer__p">Klubs sniedz, bet kluba biedrs pieņem un apmaksā (vai kluba biedrs pieņem, bet līguma īpašnieks apmaksā) pakalpojumus fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanā un vadīšanā saskaņā ar līguma nosacījumiem, kluba apstiprinātajiem noteikumiem (reglamentiem) un kluba noteikumiem.</p>
+<div class="offer__sp"></div>
+<h2 class="offer__h2">3. PAKALPOJUMU SNIEGŠANAS NOSACĪJUMI UN KĀRTĪBA</h2>
+<h3 class="offer__h3">3.1. Galveno pakalpojumu sniegšanas kārtība, kā arī Pušu tiesības un pienākumi ir noteikti Līgumā un Kluba noteikumos.</h3>
+<p class="offer__p">Noslēdzot Līgumu un veicot Līgumā paredzētos maksājumus, kluba biedrs/Līguma īpašnieks apstiprina, ka ir iepazinisies ar Kluba noteikumiem un apņemas tos izpildīt, turklāt, ja Līguma īpašnieks un kluba biedrs ir atšķirīgas personas, kluba biedrs pieņem šā piedāvājuma nosacījumus, veicot noteiktas darbības, piemēram, ienākot fitnesa kluba teritorijā caur turniketu.</p>
+<p class="offer__p">Fiziskas vai juridiskas personas, kas vēlas noslēgt Līgumu, veiktā maksājuma summa, kas atbilst Pamata pakalpojumu vērtībai par Pakalpojumu sniegšanas maksājuma periodu, kāda tā ir noteikta Cenrāžī brīdī, kad tiek veikts šāds maksājums, tiek uzskatīta par šā piedāvājuma pieņemšanu un Līguma noslēgšanu saskaņā ar šā piedāvājuma nosacījumiem pilnā apjomā bez jebkādiem izņēmumiem un ierobežojumiem. Šā piedāvājuma 3.2. punktā paredzētā maksājuma nosacījuma neizpilde vai nepareiza izpilde netiek uzskatīta par pieņemšanu un neizraisa Līguma noslēgšanu.</p>
+<p class="offer__p">Pakalpojumu sniegšanas maksājumu periods tiek aprēķināts no Līguma aktivizēšanas dienas. Līgums tiek aktivizēts vai nu 10 (desmit) dienu laikā no maksājuma veikšanas dienas, vai pirmajā apmeklējuma dienā, atkarībā no tā, kas notiek agrāk. Ja abonementa maksa tika samaksāta pirmspārdošanas posmā, šāds Līgums tiek aktivizēts no Kluba atvēršanas dienas, par to paziņojot uz e-pastu, kuru Kluba loceklis norādīja, reģistrējoties un samaksājot Pievienošanās maksu un Abonementa maksu. Paziņojums par jauna kluba atvēršanu tiek nosūtīts ne vēlāk kā 24 (divdesmit četras) stundas iepriekš. Līguma aktivizēšanas datums netiek pārcelts. </p>
+<p class="offer__p">Kluba biedrs, Līguma īpašnieks ir iepazinušies un piekrīt, ka Līgums tiek noslēgts saskaņā ar abonementa līguma nosacījumiem. Attiecīgi, ja klubs ir nodrošinājis kluba loceklim piekļuvi pamata pakalpojumiem un/vai papildu pakalpojumiem, bet no kluba neatkarīgu iemeslu dēļ kluba loceklis nav izmantojis pakalpojumus, pakalpojumu sniegšanas periods netiek pagarināts un samaksātā nauda netiek atgriezta.</p>
+<p class="offer__p">Līguma darbības laikā piekļuve Klubam tiek nodrošināta uz vispārīgiem pamatiem:</p>
+<p class="offer__p">- Piekļuve uz vispārīgiem pamatiem tiek nodrošināta visiem Kluba biedriem, kuri ir samaksājuši par pamata pakalpojumiem kārtējā periodā. Piekļuve Klubam notiek kopējā rindā, ieeja ir iespējama, izmantojot elektroniskos identifikācijas līdzekļus (FITURA aplikācija ar QR kodu) uz Kluba aproci, kas dod tiesības izmantot īpašo skapīti.</p>
+<p class="offer__p">Ja līgums ir noslēgts, samaksājot par pakalpojumiem saskaņā ar šā piedāvājuma 3.2. punktu, līguma īpašnieks uzskatāms par pieņēmušu līguma nosacījumus un apņemas tos stingri ievērot. Klubu aproci izsniedz Izpildītājs kluba loceklim pēc tam, kad tas ir izpildījis šā piedāvājuma 5.5.3. punkta prasības un samaksājis pakalpojuma maksu.</p>
+<p class="offer__p">Tajā pašā laikā brīdis, kad kluba loceklis saņem kluba aproci, neietekmē līguma aktivizēšanas datumu.</p>
+<p class="offer__p">Fakts, ka kluba loceklim ir sniegtas Līgumā paredzētās pakalpojumi, nav jāapstiprina ar pakalpojumu sniegšanas aktiem un tiek uzskatīts par izpildītu saskaņā ar Līguma nosacījumiem. Pakalpojumi tiek uzskatīti par sniegtiem pilnā apjomā saskaņā ar Līguma nosacījumiem, ja pēc 5 (piecu) kalendāro dienu termiņa no brīža, kad Līguma īpašnieks un (vai) Kluba biedrs ir samaksājis par pakalpojumiem, rakstveidā nav iesniegtas pretenzijas par to apjomu un kvalitāti.</p>
+<p class="offer__p">3.9. Izpildītājam ir tiesības veikt kluba demonstrāciju tiešsaistē, izmantojot fotogrāfijas un videomateriālus, kas pieejami tīmekļa vietnē.</p>
+<h2 class="offer__h2">4. KLUBU PAMATPAKALPOJUMU CENA UN APMAKSAS KĀRTĪBA</h2>
+<p class="offer__p">Klubu locekļiem sniegto pamata pakalpojumu cena tiek noteikta, pamatojoties uz cenrādi, kas ir spēkā brīdī, kad šie pamata pakalpojumi ir jāapmaksā. Cenrādis tiek publicēts izpildītāja oficiālajā tīmekļa vietnē https://www.fitura.lv un/vai izvietots klubā visiem pieejamā vietā.</p>
+<p class="offer__p">Galveno pakalpojumu izmaksas apmaksā līguma īpašnieks eiro valūtā, ieskaitot PVN, ar priekšapmaksu par galveno pakalpojumu sniegšanas maksājumu periodu šādā secībā:</p>
+<p class="offer__p">Maksājums par Pamata pakalpojumiem par pirmo Maksājumu periodu tiek veikts Līguma noslēgšanas brīdī un ietver&nbsp;&nbsp;Abonementa maksu atkarībā no Kluba locekļa izvēlētā Pamata pakalpojumu tarifa:&nbsp;&nbsp;FULL ACCES, DUO, JUNIOR.</p>
+<p class="offer__p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Galveno pakalpojumu saraksts saskaņā ar līgumu atbilstoši apmaksātajam abonementam:</p>
+<div class="offer__sp"></div>
+<div class="offer__sp"></div>
+<div class="offer__sp"></div>
+<div class="offer__sp"></div>
+<div class="offer__table-wrap"><table class="offer__table"><tr><td>PIEDALĪŠANĀS MAKSA</td><td>FULL ACCES</td><td>DUO <br>LĪGUMA ĪPAŠNIEKS +KLUBA LOCEKĻIS/ ATSEVIŠĶA APMEKLĒŠANA</td><td>Junior</td></tr><tr><td>Personīgā aproce ar elektronisko piekļuvi</td><td>Trenažieru zāle</td><td>Trenažieru zāle</td><td>Trenažieru zāle</td></tr><tr><td>Piekļuve lietotnei </td><td>Skapītis ģērbtuves telpā apmeklējuma laikā</td><td>Skapītis ģērbtuves telpā apmeklējuma laikā</td><td>Skapītis ģērbtuves telpā apmeklējuma laikā</td></tr><tr><td>Ķermeņa sastāva analīze&nbsp;&nbsp;</td><td>Grupu nodarbības saskaņā ar grafiku</td><td>Grupu nodarbības pēc grafika</td><td>Grupu nodarbības pēc grafika</td></tr><tr><td>40 minūšu ievadapmācība</td><td>Piekļuve SPA zonai</td><td>Piekļuve SPA zonai</td><td>Piekļuve SPA zonai</td></tr><tr><td>1 (viena) izmēģinājuma atjaunojoša procedūra saskaņā ar spēkā esošo akciju Fitura LAB</td><td>Pirts</td><td>&nbsp;Pirts</td><td>&nbsp;Pirts</td></tr><tr><td>&nbsp;</td><td>Sauna</td><td>Sauna</td><td>Sauna</td></tr><tr><td>&nbsp;</td><td>Hammam</td><td>Hammam</td><td>Hammam</td></tr></table></div>
+<div class="offer__sp"></div>
+<p class="offer__p">Pamata pakalpojumu cenā ir iekļauts:</p>
+<p class="offer__p">Pakalpojums Skatuves skapītis apmeklējuma laikā – pakalpojums, kas dod tiesības īslaicīgi izmantot jebkuru brīvo skapīti, kas atrodas kluba ģērbtuves telpā, uz laiku, kamēr kluba biedrs atrodas klubā. Izmantošanas laiks ir laiks, kamēr kluba biedrs atrodas klubā dienas laikā.&nbsp;&nbsp;Skapīša izmantošanas laiks nedrīkst pārsniegt kluba darba laiku katrā kalendārajā dienā saskaņā ar kluba darba režīmu. Par izmantošanas sākumu uzskata brīdi, kad tiek sākta ierīces (elektroniskā atslēgas) programmēšana, lai piekļūtu skapītim, bet par izmantošanas beigām uzskata jebkuru notikumu, kas iestājas agrāk, vai fizisku skapīša atbrīvošanu no mantām, vai kluba locekļa iziešanu no kluba, vai kluba darba laika beigām.Kluba loceklis ir tiesīgs vairākkārt sākt izmantošanu dienas laikā, ievērojot kluba darba režīmu.</p>
+<p class="offer__p">Klubs neveic kontroli pār mantām, kas atrodas skapītī, tāpēc nepieņem mantu sarakstu un neveic uzskaiti par skapīša saturu. Skapīša izmantošana nenozīmē skapīša atstātā īpašuma identifikāciju un kluba kontroli pār īpašuma ievietošanu un izņemšanu. Klubs nepieņem kluba locekļa/kluba viesa mantas glabāšanai un neveic to uzskaiti, bet tikai nodrošina iespēju izmantot skapīti ģērbtuves telpā. Tādēļ izpildītājs nav atbildīgs par mantām, kas atstātas skapītī ģērbtuves telpā.</p>
+<p class="offer__p">Gadījumā, ja pēc skapīša izmantošanas beigām klubs atrod skapīšā mantas, puses ir vienojušās, ka attiecībā uz šīm mantām tiks piemērots bezsaimnieka mantu režīms. Klubam ir tiesības glabāt atrastās mantas 15 (piecpadsmit) kalendārās dienas, pēc tam klubam ir tiesības iznīcināt atrastās bezsaimnieka mantas.</p>
+<p class="offer__p">Līguma noslēgšanas brīdī ir jāveic samaksa par pieslēgšanās maksu, izņemot gadījumus, kad samaksa par pieslēgšanās maksu tiek veikta mazākā apmērā, ņemot vērā īpašos piedāvājumus, kas ir spēkā Līguma samaksas brīdī. Informācija par izpildītāja cenām, spēkā esošajiem tarifiem un pieslēgšanās maksas apmēru ir pieejama tīmekļa vietnē https://www.fitura.lv</p>
+<p class="offer__p">Maksājums par pamatpakalpojumiem par otro un turpmākajiem Maksājumu periodiem, kuros tiek sniegti Pamatpakalpojumi, ietver abonementa maksu, kas atbilst izvēlētā tarifa cenai, un tiek veikts ik pēc 28 (divdesmit astoņām) kalendārām dienām ne vēlāk kā pēdējā dienā pirms Maksājumu perioda.</p>
+<p class="offer__p">Pievienošanās&nbsp;&nbsp;maksa&nbsp;&nbsp;– summa, kas jāmaksā, noslēdzot Līgumu, un kuras apmērs ir noteikts Cenrādis,&nbsp;&nbsp;par kuru Klubs tieši nepiedāvā pakalpojumus, izņemot tos, kas minēti 4. punktā.&nbsp;&nbsp;Pievienošanās maksa jāmaksā katru reizi, noslēdzot Līgumu. Informācija par Pievienošanās maksas cenu ir pieejama tīmekļa vietnē&nbsp;&nbsp;https://www.fitura.lv. Pievienošanās maksas cenā ir iekļauts: Digitālā atslēgas nodošana - Kluba personīgā aproce&nbsp;&nbsp;, lai iekļūtu Klubā, un pakalpojumi, kas iekļauti Pievienošanās maksā, piekļuve mobilajai lietotnei.</p>
+<p class="offer__p">Pakalpojumi, kas iekļauti pievienošanās maksā:</p>
+<p class="offer__p">Ķermeņa sastāva analīze – fizisko rādītāju līmeņa noskaidrošana, ķermeņa sastāva noteikšana, ieskaitot tauku, šķidruma organismā, muskuļu un kaulu masas analīzi, ir spēkā kalendārā gada laikā. </p>
+<p class="offer__p">
+40 minūšu&nbsp;&nbsp;ievadapmācība, kuras laikā tiek veikta aptauja par pieredzi un mērķiem, tiek sniegti ieteikumi, iepazīstināti ar fitnesa klubu, aprīkojumu, treniņu zonām. Izpildītājs piešķir kluba loceklim tiesības izmantot šo pakalpojumu kalendārā gada laikā. </p>
+<div class="offer__sp"></div>
+<p class="offer__p">1 (viena) izmēģinājuma atjaunojoša procedūra saskaņā ar spēkā esošo akciju Fitura LAB. Šīs procedūras izmantošanas termiņš ir 28 (divdesmit astoņas) kalendārās dienas no līguma aktivizēšanas brīža. Ja klubs pēc saviem ieskatiem nav izmantojis pakalpojumu, pakalpojums tiek uzskatīts par sniegtu.</p>
+<div class="offer__sp"></div>
+<p class="offer__p">Par maksājumu kārtību un veidiem tiek publicēts izpildītāja oficiālajā tīmekļa vietnē&nbsp;&nbsp;https://www.fitura.lv</p>
+<p class="offer__p">Publiskajā piedāvājumā ir noteikts, ka, ja tiek pārkāpts abonēšanas maksas samaksas termiņš par nākamo maksājumu periodu, kas paredzēts šā piedāvājuma 4.2. punktā, izpildītājs ievieš kluba loceklim piekļuves ierobežojumu līdz brīdim, kad līguma īpašnieks samaksā abonēšanas maksu.</p>
+<p class="offer__p">Tajā pašā laikā Izpildītājs neizbeidz Līgumu ar Kluba biedru, bet ierobežo piekļuvi Klubam līdz brīdim, kad tiek samaksāts parāds par Maksājumu periodu. Arī publiskajā piedāvājumā ir noteikts, ka kluba loceklis, līguma īpašnieks ir iepazinušies un piekrīt, ka līgums tiek noslēgts uz abonementa līguma nosacījumiem uz 13 (trīspadsmit) maksājumu periodiem ar automātisku pagarinājumu. Pakalpojumu sniegšanas apturēšana pēc Izpildītāja iniciatīvas ir saistīta ar nepienācīgu abonementa līguma saistību izpildi, kluba locekļa/līguma īpašnieka līguma nosacījumu neizpildi, kas izpaužas kā abonementa maksas nesamaksāšana termiņā, turklāt klubs savas saistības ir izpildījis pienācīgi. Tā kā līgums netika izbeigts, bet tika pārtraukts, klubam/līguma īpašniekam par norādīto periodu netiek izmaksāta kompensācija.</p>
+<p class="offer__p">Kluba loceklis var priekšlaicīgi izbeigt līgumu, par to paziņojot izpildītājam vismaz 28 (divdesmit astoņas) kalendārās dienas iepriekš un samaksājot maksājumu periodu ar priekšapmaksu, ar nosacījumu, ka ir dzēstas visas esošās parādsaistības. Līguma izbeigšana neierobežo un neizslēdz Kluba tiesības pieprasīt no Kluba locekļa parāda samaksu un/vai zaudējumu atlīdzību saskaņā ar Līgumu.</p>
+<div class="offer__sp"></div>
+<p class="offer__p">Līguma izbeigšanas un atkārtotas noslēgšanas gadījumā Līguma īpašnieks vai Kluba biedrs apmaksā Pievienošanās maksu saskaņā ar šo piedāvājumu, turklāt Izpildītājam ir tiesības noteikt mazāku Pievienošanās maksu, ņemot vērā īpašos piedāvājumus, kas ir spēkā Līguma atkārtotas noslēgšanas brīdī. Turpmākie maksājumi tiek veikti saskaņā ar šā piedāvājuma 4. sadaļas nosacījumiem.</p>
+<p class="offer__p">Maksājumu par pamata pakalpojumiem veic līguma īpašnieks, iepriekš samaksājot par visu maksājumu periodu (28 divdesmit astoņas) kalendārās dienas, kurās tiek sniegti pakalpojumi līguma noslēgšanas brīdī, tostarp ņemot vērā īpašos piedāvājumus, kas ir spēkā maksājuma veikšanas brīdī.</p>
+<p class="offer__p">Papildu pakalpojumu izmaksas tiek noteiktas saskaņā ar Cenrādi, kas ir spēkā maksājuma veikšanas brīdī. Papildu pakalpojumus apmaksā Kluba loceklis vai Līguma īpašnieks, veicot 100% priekšapmaksu.</p>
+<p class="offer__p">Maksājums par pamata un papildu pakalpojumiem un izpildītāja pievienošanās maksa ietver PVN. </p>
+<p class="offer__p">Papildu pakalpojumu sniegšana tiek regulēta ar šīs publiskās piedāvājuma nosacījumiem. Pakalpojumu apraksts, sniegšanas kārtība un cena tiek paziņota patērētājam kluba atrašanās vietā.</p>
+<h2 class="offer__h2">5. PUŠU TIESĪBAS UN PIENĀKUMI</h2>
+<p class="offer__p">Izpildītājam ir pienākums:</p>
+<p class="offer__p">Klubu darba laikā nodrošināt Līgumā paredzēto maksas pakalpojumu sniegšanu.</p>
+<p class="offer__p">Klubu darbības izbeigšanas gadījumā atgriezt Līguma īpašniekam atlikušos naudas līdzekļus par apmaksātajiem, bet neizmantotajiem pakalpojumiem.</p>
+<p class="offer__p">Informēt Līguma īpašnieku un/vai Kluba biedru par izmaiņām piedāvājuma nosacījumos, Līguma, Kluba noteikumiem, Cenrādim ne vēlāk kā 1 (vienu) mēnesi pirms to stāšanās spēkā, publicējot tos Izpildītāja tīmekļa vietnē&nbsp;&nbsp;https://www.fitura.lv un/vai izvietojot tos visiem pieejamā vietā Kluba teritorijā. Tajā pašā laikā kluba loceklim un/vai līguma īpašniekam ir pienākums pašam sekot līdzi šādām izmaiņām. Līguma īpašnieka pilnīga vai daļēja samaksa par pamata pakalpojumiem nākamajā maksājumu periodā, kurā stājas spēkā izmaiņas, nozīmē viņa piekrišanu veiktajām izmaiņām.</p>
+<p class="offer__p">Pēc Līguma noslēgšanas nodrošināt Kluba loceklim Kluba aproci, ja ir samaksāta Pievienošanās maksa un Kluba loceklis ir sniedzis personas datus, kas paredzēti šā piedāvājuma 5.5.3. punktā, kā arī piekritis personas datu apstrādei.</p>
+<p class="offer__p">Izpildītājam ir tiesības:</p>
+<p class="offer__p">Vienpusēji un bez iepriekšējas vienošanās ar Līguma īpašnieku un/vai Kluba biedru veikt izmaiņas piedāvājuma nosacījumos, Kluba noteikumos, Cenrādī, ar nosacījumu, ka par šādām izmaiņām tiek paziņots saskaņā ar 5.1.3. punktu.</p>
+<p class="offer__p">Pārtraukt/ierobežot Pamata pakalpojumu un/vai Papildu pakalpojumu sniegšanu, slēdzot atsevišķas kluba treniņu un citas zonas uz laiku ne ilgāk kā 30 (trīsdesmit) kalendārās dienas, lai veiktu remonta un profilaktiskos darbus, vai citu objektīvu iemeslu dēļ, iepriekš par to paziņojot Līguma īpašniekam un/vai Kluba biedram ne vēlāk kā 2 (divas) kalendārās dienas pirms Pamatpakalpojumu un/vai Papildu pakalpojumu sniegšanas apturēšanas un/vai ierobežošanas datuma, publicējot informāciju tīmekļa vietnē vai izvietojot to informācijas stendā, kā arī izmantojot citus saziņas līdzekļus, tostarp lietotni, e-pastu un citus saziņas līdzekļus.</p>
+<p class="offer__p">Pamata pakalpojumu sniegšanas apturēšanas gadījumā to sniegšanas termiņš tiek pagarināts par apturēšanas dienu skaitu.</p>
+<p class="offer__p">Ja ir nepieciešams ieviest ierobežojumus Pamata pakalpojumu sniegšanai iepriekš minēto iemeslu dēļ, Klubs nesniedz nekādu kompensāciju Kluba loceklim/Līguma īpašniekam.</p>
+<p class="offer__p">Ierobežot kluba locekļa piekļuvi kluba teritorijai, bloķējot kluba aproci:</p>
+<p class="offer__p">a)&nbsp;&nbsp;&nbsp;&nbsp;ja Kluba loceklis pārkāpj Līguma un/vai Kluba noteikumu nosacījumus;</p>
+<p class="offer__p">b)&nbsp;&nbsp;&nbsp;&nbsp;ja ir parāds par pamata pakalpojumiem, papildu pakalpojumiem;</p>
+<p class="offer__p">c)&nbsp;&nbsp;&nbsp;&nbsp;ja rodas nepārvaramas varas apstākļi, kas nav izpildītāja vainas dēļ.</p>
+<p class="offer__p">Ierobežot abonementu pārdošanu, lai ievērotu&nbsp;&nbsp;sanitāro un sadzīves pakalpojumu sniegšanas normas.</p>
+<h3 class="offer__h3">5.3. Līguma īpašniekam ir pienākums:</h3>
+<p class="offer__p">Savlaicīgi apmaksāt pamata pakalpojumu izmaksas piedāvājumā paredzētajā kārtībā, tostarp nodrošināt naudas līdzekļu pieejamību bankas kartes kontā pamata pakalpojumu apmaksai.</p>
+<p class="offer__p">Ievērot Līguma noteikumus, Kluba noteikumus.</p>
+<p class="offer__p">Neatdot savas līguma tiesības un pienākumus trešajām personām.</p>
+<h3 class="offer__h3">5.4. Līguma īpašniekam ir tiesības:</h3>
+<p class="offer__p">Piedāvājumā noteiktajos gadījumos vienpusēji izbeigt Līgumu bez Kluba locekļa piekrišanas.</p>
+<h3 class="offer__h3">5.5. Kluba loceklim ir pienākums:</h3>
+<p class="offer__p">Ievērot Līguma noteikumus, Kluba noteikumus.</p>
+<p class="offer__p">Patstāvīgi iepazīties ar un ievērot drošības noteikumus, instrukcijas un ieteikumus par kluba aprīkojuma lietošanu, kas atrodas kluba reģistratūrā. Instrukcijas un drošības noteikumi var tikt darīti zināmi patērētājam, izvietojot informāciju kluba reģistratūrā.</p>
+<p class="offer__p">Lai nodrošinātu piekļuvi klubam (kā arī klubā izsniegtās aproces saņemšanai), izpildītājs ir tiesīgs pieprasīt kluba biedra identifikāciju, un kluba biedrs ir tiesīgs izpildītājam sniegt šādus personas datus: vārds un uzvārds, dzimšanas datums, tālrunis, e-pasts (elektroniskā pasta adrese), fotogrāfija , kas ļaus identificēt klientu, piekļūstot klubam vai atsevišķām zonām, bankas kartes rekvizīti, kā arī sniegt izpildītājam piekrišanu apstrādāt savus personas datus, pieņemt piedāvājumu. Datu uzglabāšana tiek veikta saskaņā ar Iekšējās kārtības noteikumiem, kas izvietoti kluba reģistratūrā.</p>
+<p class="offer__p">Pašam novērtēt savu veselības stāvokli un iespēju apmeklēt klubu (izmantot sporta aprīkojumu un inventāru, trenažierus, veikt vingrinājumus). Klubu apmeklējums ir saistīts ar traumu risku (dzīvības vai veselības apdraudējumu), piemēram, sasitumiem, izmežģījumiem, stiepumiem, saišu plīsumiem un citiem, neatkarīgi no to smaguma pakāpes. Ja rodas reibonis un/vai jebkāda cita pašsajūtas/veselības stāvokļa pasliktināšanās, kluba apmeklētājam ir pienākums nekavējoties pārtraukt treniņu un jebkādu pakalpojumu izmantošanu un vērsties pie ārsta.</p>
+<p class="offer__p">Nodrošināt savas mantas uzraudzību, apmeklējot klubu, lai novērstu to zādzību (nozagšanu); novietojot mantas skapītī ģērbtuves telpā, aizslēgt to ar elektronisko atslēgu, pārbaudot, vai tā ir droši aizslēgta; neatstāt skapīša durvis atvērtas; neatstāt mantas bez uzraudzības (zem soliņiem, uz soliņa, virs skapīša utt.). Izpildītājs nav atbildīgs par kluba biedra mantu nozaudēšanu.</p>
+<p class="offer__p">Ja klubā iegādātais aproces ir pazaudēts vai bojāts, lai atjaunotu piekļuvi skapītim, ir jāiegādājas jauns klubā iegādātais aproces, samaksājot tā cenu, kas noteikta cenrādī. Klubā iegādātā aproces cenu var samaksāt līguma īpašnieks.</p>
+<p class="offer__p">Klubā nedrīkst veikt nekādu uzņēmējdarbību un/vai sniegt trešajām personām bezmaksas konsultācijas par šo trešo personu fiziskās kultūras, veselības un sporta aktivitātēm.</p>
+<p class="offer__p">Neatdot savas tiesības un pienākumus saskaņā ar Līgumu trešajām personām.</p>
+<p class="offer__p">Gadījumā, ja tiek nodarīts kaitējums kluba īpašumam, atlīdzināt nodarīto kaitējumu saskaņā ar piedāvājuma 8.1. punktu.</p>
+<h3 class="offer__h3">5.6. Kluba biedrs ir tiesīgs:</h3>
+<p class="offer__p">Par atsevišķu samaksu iegādāties un izmantot Papildu pakalpojumus, kas tiek sniegti Kluba teritorijā, saskaņā ar Cenrādi.</p>
+<p class="offer__p">Iegādāties trešo personu pakalpojumus, kas darbojas Kluba teritorijā, tērpušies formās ar kluba firmas logotipu, ar kurām Izpildītājam ir noslēgts līgums par fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanu un citu pakalpojumu sniegšanu saskaņā ar spēkā esošajiem tiesību aktiem. Maksājums par kluba papildu pakalpojumiem, ko sniedz trešās personas, tiek veikts tieši trešajai personai, kas sniedz pakalpojumu. </p>
+<p class="offer__p">Veikt maksājumu par Līgumā paredzēto Pamata pakalpojumu izmaksām, ja Līguma īpašniekam ir parāds.</p>
+<p class="offer__p">&nbsp;&nbsp;&nbsp;&nbsp;5.6.3. Atteikties no savām tiesībām apmeklēt Klubu saskaņā ar Līgumu, par to paziņojot Līguma īpašniekam. Šajā gadījumā tiesības uz Līguma izbeigšanu var īstenot tikai Līguma īpašnieks, iesniedzot rakstisku paziņojumu kluba reģistratūrā kluba darba laikā no plkst. 10 līdz 22. Paziņojot par to uz e-pastu Клубаinfo@fitura.lv&nbsp;&nbsp;&nbsp;Izņēmums ir gadījums, ja Līguma īpašnieks un Kluba biedrs ir viena un tā pati fiziskā persona. Ievērojot līguma izbeigšanas noteikumus, kas minēti piedāvājuma 4.6. punktā.</p>
+<p class="offer__p">&nbsp;</p>
+<div class="offer__sp"></div>
+<h2 class="offer__h2">6. LĪGUMA DARBĪBAS TERMIŅŠ UN IZBEIGŠANA</h2>
+<div class="offer__sp"></div>
+<p class="offer__p">Līgums stājas spēkā no Piedāvājuma pieņemšanas brīža un ir spēkā 13 (trīspadsmit) Maksājumu periodus, ar automātisku pagarinājumu līdz tā izbeigšanai.</p>
+<p class="offer__p">Līgumu var vienpusēji izbeigt pēc Līguma īpašnieka iniciatīvas, kā arī vienpusēji pēc Izpildītāja iniciatīvas, ja Līguma īpašnieks un/vai Līguma kluba loceklis un/vai Kluba noteikumi ir pārkāpti.</p>
+<p class="offer__p">Līguma automātisko pagarināšanu var apturēt pēc Līguma īpašnieka iniciatīvas vienpusēji pēc 12 (divpadsmit) periodu beigām, par to paziņojot Izpildītājam ne vēlāk kā 28 (divdesmit astoņas) kalendārās dienas, iesniedzot rakstisku paziņojumu kluba reģistratūrā kluba darba laikā no plkst. 10 līdz 22. Nosūtot paziņojumu pa e-pastu info@fitura.lv.Датой, Līguma izbeigšanas datums būs 13 (trīspadsmit) Maksājumu periodu beigšanās datums. </p>
+<p class="offer__p">Paziņojums par Līguma vienpusēju izbeigšanu pēc Līguma īpašnieka iniciatīvas tiek uzskatīts par saņemtu Izpildītājam no brīža, kad šāds paziņojums ir iesniegts, paziņojumu var iesniegt veidā, kas norādīts šā piedāvājuma 7.3. punktā.</p>
+<p class="offer__p">Līgumu var vienpusēji izbeigt pēc Izpildītāja iniciatīvas, par to paziņojot Līguma īpašniekam un Kluba loceklim (paziņojums Līguma īpašniekam tiek nosūtīts pa šādiem saziņas kanāliem, kurus viņš norādījis: pa e-pastu, pa tālruņa numuru, tostarp izmantojot ziņojumapmaiņas programmas, ja tādas ir pieejamas) 1 (vienu) kalendāro dienu pirms paredzētās Līguma izbeigšanas dienas, ja:</p>
+<p class="offer__p">a)&nbsp;&nbsp;&nbsp;&nbsp;vienreizējs Kluba locekļa būtisku Līguma un/vai Kluba noteikumu pārkāpums</p>
+<p class="offer__p">;</p>
+<p class="offer__p">b)&nbsp;&nbsp;&nbsp;&nbsp;kluba īpašuma bojāšana, trešo personu īpašuma, dzīvības un/vai veselības bojāšana, kā arī gadījumos, kad veiktas darbības, kas acīmredzami rada draudus īpašuma, dzīvības un/vai veselības bojāšanai (tostarp, bet ne tikai, iesaistīšanās konfliktā, izmantojot fizisku spēku vai neizmantojot to, pat gadījumos, ja veselībai nav nodarīts kaitējums vai pusēm nav pretenziju), kas noteikts divpusējā aktā, kas sastādīts saskaņā ar šā piedāvājuma 8.1. punktu;</p>
+<p class="offer__p">c)&nbsp;&nbsp;&nbsp;&nbsp;ja kluba loceklis pārkāpj pakalpojumu mērķa izmantošanu, tostarp, bet ne tikai: sniedzot kluba neatļautus personīgā trenera vai instruktora pakalpojumus kluba teritorijā; veicot darbības, kuru mērķis ir kluba loceklim gūt labumu no savām zināšanām, prasmēm vai pieredzes kluba teritorijā; aģitācijas darbības, sapulču rīkošana, ziedojumu vākšana un citas darbības, kas ir pretrunā Līguma mērķiem.</p>
+<p class="offer__p">d)&nbsp;&nbsp;&nbsp;&nbsp;atkārtotu (divas vai vairāk reizes) Līguma un/vai Kluba noteikumu pārkāpumu gadījumā.</p>
+<p class="offer__p">Līgums var tikt vienpusēji izbeigts pēc Izpildītāja iniciatīvas, ja klubs pārtrauc darbību, par to paziņojot Līguma īpašniekam un kluba loceklim 30 (trīsdesmit) kalendārās dienas pirms pēdējās dienas, kad klubs sniedz pakalpojumus.</p>
+<h2 class="offer__h2">8. PUŠU ATBILDĪBA</h2>
+<p class="offer__p">Kluba loceklis ir materiāli atbildīgs par zaudējumiem, kas nodarīti Kluba īpašumam, un ir pienākums atlīdzināt bojātā un/vai zaudētā īpašuma vērtību.</p>
+<p class="offer__p">Zaudējumu nodarīšana tiek apstiprināta ar dienesta piezīmi (turpmāk tekstā var būt nosaukums „Dienesta piezīme” vai „Akts”), ko paraksta kluba loceklis un kluba pārstāvis. Ja kluba loceklis atsakās parakstīt Aktu, klubs to paraksta vienpusēji. Kluba biedrs 5 (piecu) kalendāro dienu laikā no akta sastādīšanas brīža ir pienākums pilnībā atlīdzināt nodarīto zaudējumu.</p>
+<p class="offer__p">Pieņemot piedāvājumu, līguma īpašnieks un/vai kluba biedrs apstiprina, ka viņam nav medicīnisku kontrindikāciju apmeklēt klubu un saņemt fiziskās kultūras un veselības uzlabošanas pakalpojumus.</p>
+<p class="offer__p">Izpildītājs NEATBILD par:</p>
+<p class="offer__p">par kaitējumu, kas nodarīts kluba locekļa dzīvībai, veselībai vai īpašumam, ja līguma īpašnieks un/vai kluba loceklis nav sniedzis un/vai nav savlaicīgi sniedzis klubam patiesu informāciju par kluba locekļa veselības stāvokli; un/vai par kluba locekļa līguma, kluba noteikumu un/vai fiziskās kultūras, fiziskās kultūras un veselības pasākumu noteikumiem (reglamentiem) un/vai drošības noteikumiem, izmantojot pamata pakalpojumus, papildu pakalpojumiem, instrukcijām un ieteikumiem par aprīkojuma, inventāra utt. lietošanu, brīdinājuma, ierobežojošām un/vai aizliedzošām zīmēm un uzrakstiem, kas izvietoti klubā vai pakalpojumu sniegšanas vietā; un/vai kluba locekļa tīšu darbību vai neuzmanības rezultātā;</p>
+<p class="offer__p">par kaitējumu, kas nodarīts kluba locekļa veselībai vai īpašumam ar savām darbībām un/vai bezdarbību, un/vai patstāvīgu nodarbību laikā, un/vai nodarīts ar trešo personu darbībām;</p>
+<p class="offer__p">par kaitējumu, kas nodarīts kluba locekļa/kluba viesa veselībai, pārvietojoties kluba teritorijā bez pienācīgas piesardzības, kā rezultātā notika līdzsvara zaudēšana vai krišana. Kā arī sakarā ar pieskārienu paaugstinātas bīstamības zonās (SPA zona) iekārtu virsmām, kurām ir augsta temperatūra, kas var bojāt ādu un nodarīt kaitējumu veselībai, izraisot apdegumus, tostarp atrodoties tiešā tuvumā iekārtām, kas rada tvaiku, attālumā, kas mazāks par 1 (vienu) metru;</p>
+<p class="offer__p">par personīgo mantu nozaudēšanu vai bojāšanu, kas atstātas ģērbtuves telpās vai citās kluba telpās;</p>
+<p class="offer__p">par kaitējumu, kas saistīts ar veselības pasliktināšanos, ja kluba locekļa veselības stāvoklis pasliktinājies akūtas slimības, traumas saasināšanās vai hroniskas slimības ( ) rezultātā, kluba locekļa, trešo personu, kas nav kluba darbinieki, rīcības un/vai bezdarbības rezultātā;</p>
+<p class="offer__p">par tehniskām neērtībām, kas radušās autorizētu organizāciju veikto sezonālo profilaktisko, remonta, būvniecības un citu darbu dēļ, kā arī avāriju un nepārvaramas varas apstākļu dēļ, kas radušies ne kluba vainas dēļ.</p>
+<p class="offer__p">8.4. Puses tiek atbrīvotas no atbildības par daļēju vai pilnīgu līguma saistību neizpildi, ja neizpilde ir notikusi nepārvaramas varas apstākļu dēļ. Puse, kuras saistības nevar izpildīt nepārvaramas varas apstākļu dēļ, ir pienākums informēt otru Pusi 3 (trīs) kalendāro dienu laikā no šādu apstākļu iestāšanās brīža. Minēto apstākļu iestāšanās jāapstiprina ar pilnvarotas kompetentas iestādes aktu.</p>
+<h2 class="offer__h2">9. CITI NOSACĪJUMI</h2>
+<p class="offer__p">Pieņemot piedāvājumu, līguma īpašnieks paziņo:</p>
+<p class="offer__p">par savu pilnīgu un bezierunu pievienošanos piedāvājumam un savu piekrišanu tajā izklāstītajām pušu saistībām un tiesībām, par saistību uzņemšanos tās izpildīt, ieskaitot visus pielikumus un papildinājumus, par to, ka to saturs viņam ir pilnībā saprotams;</p>
+<p class="offer__p">par savu pilnīgu un bezierunu piekrišanu tam, ka Izpildītājs var vienpusēji un bez iepriekšējas saskaņošanas ar Līguma īpašnieku un/vai Kluba biedru veikt izmaiņas piedāvājuma nosacījumos, Kluba noteikumos, cenrāžī norādītajās tarifās, iepriekš informējot Līguma īpašnieku vai Kluba biedru ne vēlāk kā 1 (vienu) mēnesi pirms izmaiņu stāšanās spēkā, publicējot tās Izpildītāja tīmekļa vietnē&nbsp;&nbsp;https://www.fitura.lv un/vai izvietojot tās klubā visiem pieejamā vietā. Piedāvājuma nosacījumu izmaiņas automātiski izraisa iepriekš noslēgto līgumu nosacījumu izmaiņas pilnīgā atbilstībā ar izmaiņām piedāvājuma nosacījumos. Līguma īpašnieks un/vai Kluba biedrs ir pienākums patstāvīgi sekot līdzi šādām izmaiņām. Tajā pašā laikā Līguma īpašnieks un/vai Kluba biedrs patur tiesības, ja nepiekrīt notikušajām izmaiņām, izbeigt Līgumu piedāvājumā paredzētajā kārtībā;</p>
+<p class="offer__p">par savu piekrišanu un uzdevumu Izpildītājam periodiski veikt bezskaidras naudas maksājumus par Pamata pakalpojumiem, izmantojot Līguma īpašnieka bankas kartes rekvizītus, bez viņa faktiskas klātbūtnes un kartes uzrādīšanas. Lai pārtrauktu turpmākas maksājumu operācijas par pamatpakalpojumiem, izpildītājam ir jānosūta atbilstošs rakstisks atteikums, kura nosacījumi ir izklāstīti šī piedāvājuma 4. punktā. 6. Līdz brīdim, kad izpildītājs saņem šādu atteikumu, visi maksājumi tiek uzskatīti par likumīgiem, ieskaitot gadījumus, kad kluba pamatpakalpojumi netiek izmantoti.</p>
+<p class="offer__p">Pieņemot piedāvājumu, kluba biedrs paziņo:</p>
+<p class="offer__p">par savu pilnīgu un bezierunu piekrišanu piedāvājuma nosacījumiem, par savu piekrišanu tajā izklāstītajām pušu saistībām un tiesībām, par saistību pieņemšanu tās ievērot, ieskaitot visus pielikumus un papildinājumus, par to, ka to saturs viņam ir pilnībā saprotams;</p>
+<p class="offer__p">par savu pilnīgu un bezierunu piekrišanu tam, ka Izpildītājs var vienpusēji un bez iepriekšējas saskaņošanas ar Līguma īpašnieku un/vai Kluba biedru veikt izmaiņas piedāvājuma nosacījumos, Kluba noteikumos, cenrāžī norādītajās tarifās, iepriekš informējot Līguma īpašnieku un/vai Kluba biedru ne vēlāk kā 1 (vienu) mēnesi pirms izmaiņu stāšanās spēkā, publicējot tās Izpildītāja tīmekļa vietnē https://www.fitura.lv un/vai izvietojot tās klubā visiem pieejamā vietā. Piedāvājuma nosacījumu izmaiņas automātiski izraisa iepriekš noslēgto līgumu nosacījumu izmaiņas pilnīgā atbilstībā ar izmaiņām piedāvājuma nosacījumos. Līguma īpašnieks un/vai kluba biedrs ir pienākums patstāvīgi sekot līdzi šādām izmaiņām. Tajā pašā laikā līguma īpašnieks un/vai kluba biedrs patur tiesības, ja viņi nepiekrīt izmaiņām, lauzt līgumu piedāvājumā paredzētajā kārtībā;</p>
+<p class="offer__p">Visus strīdus un domstarpības, tostarp saistībā ar Līguma grozīšanu un izbeigšanu, Puses risina sarunu ceļā. Ja sarunu gaitā Puses nav atrisinājušas strīdīgo situāciju, ieinteresētā Puse var nosūtīt otrai Pusei rakstisku pretenziju. Prasība jānosūta pa pastu ierakstītā vēstulē ar paziņojumu uz Izpildītāja juridisko adresi. Prasības izskatīšanas termiņš ir 10 (desmit) kalendārās dienas.</p>
+<p class="offer__p">Ja vienošanās netiek panākta, strīds var tikt nodots izskatīšanai tiesā Izpildītāja atrašanās vietā.</p>
+<p class="offer__p">Visos pārējos gadījumos, kas nav paredzēti Līgumā, Puses vadās pēc Latvijas Republikas normatīvajiem aktiem.</p>
+<h3 class="offer__h3">10. Izpildītāja rekvizīti</h3>
+<div class="offer__sp"></div>
+<div class="offer__sp"></div>
+<h2 class="offer__h2">FITURA SIA</h2>
+<p class="offer__p">Reģ. Nr. 40203634454</p>
+<p class="offer__p">PVN(VAT) Nr. LV40203634454</p>
+<p class="offer__p">Jaunā iela 12 k-12, Piņķi, Babītes pag., Mārupes nov., LV-2107</p>
+<p class="offer__p">Rietumu Banka AS, RTMBLV2X</p>
+<h2 class="offer__h2">LV37 RTMB 0000 7018 0169 2</h2>
+<div class="offer__sp"></div>
+<p class="offer__p">Pielikums Nr. 1 </p>
+<p class="offer__p">pie publiskā piedāvājuma Nr. 1 no 2026. gada 14. janvāra</p>
+<div class="offer__sp"></div>
+<h2 class="offer__h2">KLUBA NOTEIKUMI</h2>
+<p class="offer__p">&nbsp;Kluba noteikumi par slimību profilaksi un aizsardzību</p>
+<p class="offer__p">Katrs kluba biedrs pirms kluba apmeklējuma ir pienākums patstāvīgi novērtēt savu veselības stāvokli.</p>
+<p class="offer__p">Personas, kas vecākas par 65 gadiem, un personas ar jebkādām, tostarp hroniskām slimībām, var apmeklēt klubu uz savu atbildību, pilnībā apzinoties visus iespējamos riskus un sekas, kas saistītas ar fiziskās kultūras un fiziskās kultūras un veselības uzlabošanas pasākumu apmeklēšanu. Kluba administrācija nav atbildīga par trešo personu darbībām un lēmumiem;</p>
+<p class="offer__p">Kluba darbinieks ir tiesīgs nepieļaut kluba biedra dalību treniņos un pasākumos, ja kluba biedram ir acīmredzamas slimības pazīmes, kas traucē saņemt fiziskās kultūras un fiziskās kultūras un veselības uzlabošanas pakalpojumus, kā arī gadījumos, ja ir pazīmes, kas liecina par apkārtējiem bīstamu slimību, tostarp elpošanas (elpas trūkums, klepus, temperatūra virs 37 utt.), šim nolūkam klubā var tikt veikta ieejas kontrole, lai vizuāli pārbaudītu apmeklētājus, darbiniekus, apakšuzņēmējus un bezkontakta temperatūras mērīšana.</p>
+<p class="offer__p">Kluba telpās ir aizliegts nodot ēdienu un dzērienus, dalīties ar ūdens pudelēm, dvieļiem, maskām vai jebkuriem citiem priekšmetiem, uz kuriem var nokļūt siekalas. Katram kluba loceklim ir jābūt līdzi personīgajiem higiēnas līdzekļiem (dvieļi, šampūns utt.);</p>
+<p class="offer__p">Atrodoties kluba telpās, kas paredzētas fiziskās kultūras un veselības uzlabošanas pasākumiem, kluba biedriem ieteicams ievērot personīgās un sabiedriskās higiēnas noteikumus, kā arī ievērot sociālo distanci.</p>
+<p class="offer__p">Ieteicams pirms un pēc lietošanas noslaucīt trenažierus un sporta inventāru ar dezinfekcijas līdzekli.</p>
+<p class="offer__p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<h2 class="offer__h2">KLUBA NOTEIKUMI </h2>
+<p class="offer__p">Kas darbojas ar preču zīmi „FITURA”</p>
+<p class="offer__p">Kluba apmeklējuma noteikumi ir obligāti izpildāmi līguma īpašniekam, kluba biedriem, potenciālajiem kluba biedriem, kluba viesiem un trešajām personām. Noteikumi nav izsmeļoši, jo izpildītājs ir tiesīgs tos papildināt un mainīt.</p>
+<div class="offer__sp"></div>
+<p class="offer__p">Kluba biedrs ir pienākums rūpīgi iepazīties ar kluba noteikumiem un līguma nosacījumiem, kas noslēgts starp līguma īpašnieku un juridisko personu (turpmāk tekstā – „Izpildītājs”), kas nodrošina kluba biedriem pakalpojumus fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanā un vadīšanā, kā arī citus pakalpojumus (turpmāk tekstā – „Pakalpojumi”) speciāli paredzētās un aprīkotās telpās (turpmāk tekstā – „Klubs”), kas aprīkotas ar speciāliem tehniskajiem līdzekļiem fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanai un norisei, kā arī citu pakalpojumu sniegšanai.</p>
+<p class="offer__p">Kluba viesis vai&nbsp;&nbsp;Kluba biedrs, apmeklējot Klubu, ir pienākums rūpīgi iepazīties ar Kluba uzvedības noteikumiem un tos ievērot.</p>
+<p class="offer__p">Kluba darba laiks, kā arī pakalpojumu izmantošanas laiks atkarībā no piekļuves veida klubam tiek izvietots klubā pie reģistratūras, informācijas stendos un/vai citos informācijas nesējos, un/vai tīmekļa vietnē:&nbsp;&nbsp;https://www.fitura.lv un/vai citā Līgumā paredzētā veidā tiek paziņots Līguma īpašniekam/kluba loceklim. Katru gadu 1. janvāris ir Kluba brīvdiena. Izpildītājs patur tiesības vienpusēji mainīt Kluba darba laiku, Pakalpojumu izmantošanas laiku atkarībā no piekļuves veida Klubam un/vai kārtību un/vai laiku, kad var izmantot atsevišķas zonas/studijas/zāles utt.</p>
+<p class="offer__p">Kluba biedriem ir tiesības izmantot Pakalpojumus, Kluba telpas un Kluba aprīkojumu, kas paredzēts fiziskās kultūras un fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanai un norisei, tikai Kluba darba laikā, ja Kluba piekļuves veids un/vai Līgums neparedz citādi. Kluba biedrs ir pienākums atstāt kluba telpas pirms tā darba laika beigām.</p>
+<p class="offer__p">Kluba aproce var būt caurlaide uz klubu, ievērojot vispārējo piekļuves kārtību. Kluba biedrs ir tiesīgs katru reizi, apmeklējot klubu, nēsāt kluba aproci, kas ir izpildītāja izsniegts elektroniskās identifikācijas līdzeklis.</p>
+<p class="offer__p">Klubu aproces izgatavošanai un pamata pakalpojumu/papildu pakalpojumu izmantošanai klubs loceklis sniedz izpildītājam šādus personas datus: vārds, uzvārds, dzimšanas datums, kontakttālrunis, e-pasta adrese un foto.</p>
+<p class="offer__p">Ja klubā tiek izmantota daudzlīmeņu klubā locekļu identifikācijas/piekļuves sistēma, klubā loceklis ir tiesīgs izmantot pakalpojumus, pamatojoties uz izpildītāja izsniegtajiem elektroniskās identifikācijas līdzekļiem.</p>
+<p class="offer__p">Kluba biedrs ir tiesīgs vērsties pie Kluba, lai saņemtu papildu pakalpojumu – pagaidu identifikācijas līdzekļa – kartes/QR koda izsniegšanu tā izmantošanas dienā, ja Kluba biedram nav līdzi Kluba aproces. Lai saņemtu pakalpojumu, kluba loceklim no plkst. 10:00 līdz 22:00, pamatojoties uz personu apliecinošu dokumentu, jāvēršas pie kluba darbiniekiem, lai saņemtu pagaidu identifikācijas līdzekli, kas ir izpildītāja īpašums un kas ir derīgs tā izsniegšanas dienā. Kluba biedram ir pienākums atdot izpildītājam pagaidu identifikācijas līdzekli tā izmantošanas dienā. Pakalpojuma cena ir 2 (divi) eiro. Pagaidu identifikācijas līdzekļa nozaudēšanas gadījumā izpildītājs ir tiesīgs piedzīt tā vērtību no personas, kas saņēmusi šādu identifikācijas līdzekli saskaņā ar cenrādi, kas bija spēkā šāda identifikācijas līdzekļa noformēšanas brīdī.</p>
+<p class="offer__p">Izmantot Pakalpojumus, Papildu pakalpojumus, elektroniskās identifikācijas līdzekļus utt. ir tiesīgs tikai Kluba biedrs, uz kura vārda ir izsniegts elektroniskais identifikācijas līdzeklis vai kura labā ir noslēgts Līgums. Aizliegts nodot Kluba biedra Kluba aproci trešajai personai.</p>
+<p class="offer__p">Piekļuve klubam ir iespējama tikai ar kluba aproci vai citā veidā, kas paredzēts publiskajā piedāvājumā un noteikumos. Ja identifikācijas līdzeklis nav pieejams, izpildītājs ir tiesīgs atteikt piekļuvi un pagaidu identifikācijas līdzekļa izsniegšanu.</p>
+<p class="offer__p">Klubā uzturoties, personīgās mantas, kā arī virsdrēbes un galvassegas jāatstāj skapītī. Vērtīgas mantas jāatstāj īpašos seifos, kas atrodas Kluba teritorijā. Klubā tiek izmantoti elektroniskie identifikācijas līdzekļi skapīšu un seifu atvēršanai/aizvēršanai. Aizejot no Kluba, Kluba biedram ir jāatbrīvo attiecīgais skapītis vai seifs no savām personīgajām mantām, atstājot skapīti/seifu atvērtu. Izpildītājs neiesaka kluba biedriem nodot aproces vai citas ierīces skapīšu/seifu atvēršanai/aizvēršanai, elektroniskai identifikācijai utt. citiem kluba biedriem. Kluba biedru ilgtermiņa skapīšu izmantošanas kārtība un nosacījumi ir reglamentēti Izpildītāja apstiprinātajos ilgtermiņa skapīšu izmantošanas noteikumos.</p>
+<p class="offer__p">Papildu pakalpojumi, kas norādīti spēkā esošajā cenrādī, var tikt sniegti kluba reģistratūrā, ja tiek veikta 100% priekšapmaksa. </p>
+<p class="offer__p">Kluba loceklis patstāvīgi veic treniņu procesu izvēlētās fiziskās kultūras, fiziskās kultūras un veselības programmas ietvaros, ņemot vērā veselības stāvokli un ārsta ieteikumus.</p>
+<p class="offer__p">Grupu programmu apmeklēšanas noteikumi.</p>
+<p class="offer__p">10.1. Dažiem fiziskās kultūras un veselības uzlabošanas pasākumiem, turpmāk tekstā – Pasākumi, ir ierobežots dalībnieku skaits, kas saistīts ar papildu aprīkojuma izmantošanu. Iepriekšēja reģistrācija Pasākumiem tiek veikta ar mobilo aplikāciju ne agrāk kā 24 (divdesmit četras) stundas pirms tā sākuma, ja ir brīvas vietas, un beidzas 1 (vienu) minūti pirms šāda Pasākuma sākuma. Kluba biedrs var tikt iekļauts Izpildītāja gaidīšanas sarakstā. Gaidīšanas saraksts ir atsevišķa rezervēšanas rinda, kurā persona, kas iekļuvusi rindā, var piedalīties pasākumā, ja pasākumā ir atbrīvojusies vieta saistībā ar citas personas atteikumu pēc iepriekšējas reģistrācijas. Vietu skaitu minētajos pasākumos nosaka izpildītājs. Ja kluba loceklis, kas pieteicies šādam pasākumam, nav ieradies tā sākuma brīdī, šā kluba locekļa pieteikums tiek anulēts, un brīvo vietu var ieņemt jebkurš kluba loceklis, kas vēlas piedalīties pasākumā. </p>
+<p class="offer__p">Grupu nodarbības notiek saskaņā ar grafiku un/vai pēc iepriekšējas pieteikšanās. Ja nodarbības notiek pēc iepriekšējas pieteikšanās un kluba loceklis ir pieteicies bezmaksas grupu nodarbībai, bet nav ieradies uz grupu nodarbību norunātajā laikā un/vai nav brīdinājis izpildītāju par neiespējamību apmeklēt šādu nodarbību, pakalpojums tiks uzskatīts par sniegtu. </p>
+<p class="offer__p">Izpildu iestāde iekļauj grafikā fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumus ar dažādu sarežģītības pakāpi un kluba biedru sagatavotības līmeni. Izpildītājs ir tiesīgs mainīt pašreizējo grafiku, ņemot vērā sezonalitāti, pasākumu reitingu un kluba biedru vēlmes. Izpildītājs ir tiesīgs vienpusēji veikt izmaiņas spēkā esošajā pasākumu grafikā un aizstāt personu, kas vada norādīto pasākumu.</p>
+<p class="offer__p">Klubu pasākumu, fiziskās kultūras un fiziskās kultūras un veselības pasākumu laikā, kas notiek kā grupu nodarbības ar kluba līgumslēdzējiem, zonas, kas paredzētas izmantošanai fiziskās kultūras un fiziskās kultūras un veselības pasākumu laikā, izpildītājs var ierobežot kluba biedru izmantošanai.</p>
+<p class="offer__p">Fizkultūras, fizkultūras un veselības uzlabošanas pasākumi grupu nodarbību veidā ar kluba darbiniekiem tiek organizēti kluba darbiniekiem un līgumslēdzējiem saskaņā ar izpildītāja noteikto metodiku un kārtību.</p>
+<p class="offer__p">Lietus, stipra vēja, gaisa temperatūras virs +25 °C vai zem -15 °C un/vai citu nelabvēlīgu laika apstākļu gadījumā fiziskās kultūras un veselības uzlabošanas pasākumi svaigā gaisā var tikt atcelti vai pārcelti, par ko kluba locekļi tiks brīdināti kluba reģistratūrā.</p>
+<p class="offer__p">Izpildītājs nav medicīnas iestāde un nesniedz kluba locekļiem medicīniskās aprūpes pakalpojumus (veselības stāvokļa novērtēšana, veselības stāvokļa novērošana un kontrole utt.).</p>
+<p class="offer__p">Ja kluba loceklim pasliktinās pašsajūta, viņam par to jāinformē kluba darbinieks, lai saņemtu pirmo palīdzību.</p>
+<p class="offer__p">Ja kluba locekļa pašsajūta pasliktinājusies brīdī, kad kluba darbinieks nav pieejams, ieteicams vērsties pie jebkuras tuvumā esošas personas ar lūgumu sniegt palīdzību un/vai izsaukt kluba darbinieku un/vai izsaukt neatliekamās medicīniskās palīdzības brigādi (turpmāk – „NMP brigāde”). Pēc neatliekamās medicīniskās palīdzības brigādes izsaukšanas ir jāinformē kluba darbinieki par tās izsaukšanu un jāpaskaidro kluba locekļa atrašanās vieta, kuram nepieciešama medicīniskā palīdzība. </p>
+<p class="offer__p">Izpildītājs iesaka kluba biedriem:</p>
+<p class="offer__p">pirms kluba apmeklējuma, pakalpojumu un papildu pakalpojumu izmantošanas veikt medicīnisko pārbaudi, jo kluba biedrs ir personīgi atbildīgs par savu veselību;</p>
+<p class="offer__p">iziet individuālu „Ķermeņa analizatora” testu;</p>
+<p class="offer__p">lai izstrādātu treniņu plānu trenažieru zālē, veikt 1. individuālo iepazīšanās treniņu individuālā vai grupas formātā;</p>
+<p class="offer__p">treniņos līdzi ņemt dvieli;</p>
+<p class="offer__p">lai uzturētu ūdens un sāls līdzsvaru organismā, piedaloties fiziskās kultūras un veselības uzlabošanas pasākumos, dzert dzeramo ūdeni;</p>
+<p class="offer__p">&nbsp;&nbsp;atstāt kluba zonas/studijas/zāles, kas paredzētas fiziskās kultūras un veselības uzlabošanas pasākumiem, ne vēlāk kā 30 (trīsdesmit) minūtes pirms kluba darba laika beigām;</p>
+<p class="offer__p">visos jautājumos, kas saistīti ar nodarbībām, aprīkojuma izmantošanu un citiem jautājumiem, vērsties pie kluba darbiniekiem;</p>
+<p class="offer__p">izpildīt kluba darbinieku ieteikumus, ieteikumus un/vai aizliegumus/ierobežojumus, kas izvietoti uz informācijas un/vai brīdinājuma, aizlieguma zīmēm klubā un/vai uz aprīkojuma;</p>
+<p class="offer__p">pašiem sekot līdzi informācijai, ko Izpildītājs izvieto par Pakalpojumiem, Klubu, Kluba noteikumiem utt. uz informācijas stendiem, Kluba reģistratūrā, tīmekļa vietnē&nbsp;&nbsp;https://www.fitura.lv un/vai citos veidos, kā informācija tiek nodota Kluba biedriem.</p>
+<h3 class="offer__h3">15. Kluba biedriem ir obligāti jāievēro šādas prasības:</h3>
+<p class="offer__p">apmeklēt fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas un citus Pasākumus īpašā, tīrā, slēgtā un vesela apavā (sporta kurpes, kedes, sporta kurpes un citi līdzīgi sporta apavi) un apģērbā, kas paredzēts fiziskās kultūras nodarbībām un atbilst pasākumu drošības un mērķa standartiem (aizliegts apmeklēt minētos pasākumus džinsos, atvērtos apavos un citā apģērbā, kas nav paredzēts fiziskās kultūras un veselības uzlabošanas nodarbībām);</p>
+<p class="offer__p">noņemt rotaslietas uz laiku, kamēr piedalāties fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas un citos pasākumos;</p>
+<p class="offer__p">apmeklēt tvaika un/vai pirts kompleksus tikai ar peldkostīmu, speciālu tīru apavu un speciālu galvassegu;</p>
+<p class="offer__p">būt uzmanīgiem un pārvietoties uzmanīgi ģērbtuves, dušas, pirts kompleksos un citās kluba telpās, obligāti lietojot speciālus maināmus, tīrus, stabilus un neslīdošus apavus;</p>
+<p class="offer__p">ierasties laicīgi uz fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumiem, kas notiek individuālu vai grupu nodarbību veidā, jo kavēšanās vairāk nekā 10 (desmit) minūtes var negatīvi ietekmēt Kluba locekļa veselības stāvokli, tāpēc Kluba darbinieks ir tiesīgs neļaut nokavējušajam Kluba loceklim piedalīties pasākumā;</p>
+<p class="offer__p">lai izvairītos no traumām un veselības kaitējuma, apmeklēt fiziskās kultūras un veselības uzlabošanas pasākumus grupu nodarbību veidā, kas atbilst kluba locekļu individuālajam sagatavotības līmenim. Kluba darbinieks vai līgumdarbinieks ir tiesīgs nepieļaut kluba biedra dalību pasākumā, ja kluba biedram nav atbilstoša sagatavotības līmeņa;</p>
+<p class="offer__p">grūtniecības periodā apmeklēt fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumus grupu nodarbību veidā, kas ir īpaši atzīmēti grafikā, tikai tad, ja ir attiecīgas ārstējošā ārsta rekomendācijas;</p>
+<p class="offer__p">kluba darbinieks ir tiesīgs neļaut kluba loceklim piedalīties pasākumā, kas nav paredzēts dalībai grūtniecības periodā;</p>
+<p class="offer__p">ievērot personīgās un vispārējās higiēnas noteikumus, uzturēt tīrību kluba teritorijā</p>
+<p class="offer__p">kluba teritorijā;</p>
+<p class="offer__p">pirms apmeklējuma un pēc pirts/saunas izmantošanas ir jāiet dušā;</p>
+<p class="offer__p">lai izvairītos no nelaimes gadījumiem, apmeklēt saunas un tvaika pirti, ja klāt ir vismaz vēl viens kluba biedrs;</p>
+<p class="offer__p">lai izvairītos no traumām, sadursmēm utt. pasākumu laikā, patstāvīgi nodarbojoties ar sportu klubā, tostarp izmantojot aprīkojumu, ievērot distanci, netraucēt un uzmanīgi izturēties pret citiem kluba biedriem, kas atrodas tiešā tuvumā;</p>
+<p class="offer__p">lai izvairītos no traumām un drošības nolūkā, veikt vingrinājumus ar maksimālo svaru trenažieru zālē kopā ar kluba darbinieku;</p>
+<p class="offer__p">lai novērstu negatīvas sekas grūtniecības periodā, neveikt vingrinājumus ar svaru;</p>
+<p class="offer__p">pirms nodarbību sākuma pārliecināties, ka izmantotais aprīkojums, inventārs utt. atrodas sākotnējā drošā un/vai izslēgtā stāvoklī, nav svešu priekšmetu, kas var ietekmēt drošu lietošanu;</p>
+<p class="offer__p">pēc patstāvīgo nodarbību beigām vai dalības fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas un citos pasākumos atgriezt izmantoto inventāru, kluba aprīkojumu īpaši tam paredzētā vietā klubā, fiksējot un/vai novietojot to drošā nedarba stāvoklī;</p>
+<p class="offer__p">neatstāt personīgās mantas bez uzraudzības;</p>
+<p class="offer__p">cieņpilni un saudzīgi izturēties pret citiem, kluba darbiniekiem, trešajām personām, kluba biedru, izpildītāja un trešo personu īpašumu;</p>
+<p class="offer__p">saglabāt tīrību klubā, rudens/ziemas/pavasara periodā uzvelkot apavu pārvalkus, ieejot kluba ģērbtuves telpā.</p>
+<p class="offer__p">Kluba loceklis var izmantot papildu pakalpojumu „Ilgtermiņa skapīša noma”. Pakalpojuma sniegšanas sākuma brīdis ir pakalpojuma apmaksas datums. Tiesības izmantot pakalpojumu tiek piešķirtas vienlaikus ar apmaksas veikšanu. Pakalpojuma sniegšanas termiņš ir 28 (divdesmit astoņas) dienas, ja ir apmaksāts maksājuma periods. Ja kluba biedrs/līguma īpašnieks nav veicis maksājumu par pakalpojumu, lai to pagarinātu, vai, izmantojot atkārtotu maksājumu, naudas līdzekļi nav norakstīti no iemesliem, kas nav atkarīgi no izpildītāja, tad pēc pakalpojuma sniegšanas termiņa beigām skapīša slēgšanas ierīce tiks atslēgta. Šādā gadījumā kluba loceklim/līguma īpašniekam ir nekavējoties jāatbrīvo skapītis, no šī brīža pakalpojums „Ilgtermiņa skapīša noma” vairs netiek sniegts, un izpildītājs neuzņemas atbildību par atstātajām mantām.</p>
+<h3 class="offer__h3">16. Kluba biedriem ir aizliegts:</h3>
+<p class="offer__p">Izmantot pakalpojumus, papildu pakalpojumus, ja jūtas slikti, akūtas slimības periodā (tostarp, ja ir infekcijas slimību pārnēsātāji) un/vai hroniskas slimības paasināšanās periodā.</p>
+<p class="offer__p">Grūtniecības periodā apmeklēt fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas un citus pasākumus, kas nav paredzēti grūtniecēm.</p>
+<p class="offer__p">Klubā rīkot fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas un citus pasākumus, tostarp, bet ne tikai: izstrādāt treniņu programmas, palīdzēt kluba biedriem treniņu procesā un/vai kontrolēt treniņu procesu, tostarp, bet ne tikai, skaitīt atkārtojumus, labot kluba biedru kustības, sniegt citus pakalpojumus kluba biedriem, kas nav saistīti ar personīgo lietošanu un var būt komerciāliem mērķiem un uzņēmējdarbības pazīmēm, kā arī ir aizliegts izmantot šādus pakalpojumus. Lai nodrošinātu drošu pakalpojumu sniegšanas noteikumus, kluba biedri var izmantot tikai izpildītāja un kluba līgumslēdzēju pakalpojumus (ja tiek pārkāpts šis punkts, klubs uzskata šo pārkāpumu par būtisku drošības noteikumu pārkāpumu un draudiem kluba locekļa un/vai trešo personu dzīvībai un/vai veselībai un ir tiesīgs pieprasīt līguma vienpusēju izbeigšanu pēc izpildītāja iniciatīvas, bez tiesībām atjaunot dalību).</p>
+<p class="offer__p">Atrasties un/vai nodarboties ar sportu Kluba zonās, kas paredzētas fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumiem, ar kailu ķermeni, peldkostīmā (izņemot SPA zonu), virsdrēbēs, ielas vai netīros apavos, šļūtenēs (izņemot SPA zonu), basām kājām vai zeķēs (izņemot īpašas nodarbības), kā arī bez īpašas aizsardzības, ja tāda ir paredzēta lietošanai fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumu laikā. Veikt sparringu, cīņu ar ēnu un citus vingrinājumus, kas var traucēt citiem kluba biedriem;</p>
+<p class="offer__p">Spēlēt, lēkt un citādi aktīvi uzvesties ģērbtuves telpās, dušās, pirtīs, saunās un citās kluba telpās, kas nav paredzētas fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanai, kā arī apliet ar ūdeni vai citām šķidrumiem sildelementu pirtī, saunā, hamamā, žāvēt drēbes tuvu šādiem sildelementiem.</p>
+<p class="offer__p">Mest un citādi neuzmanīgi izmantot aprīkojumu (hanteles, stieņus, svarcelšanas diskus un citu aprīkojumu), jo tas var izraisīt aprīkojuma, mēbeļu, kluba telpu bojājumus, palielinātu troksni, kā arī radīt risku veselībai. Ar metēšanu šajā punktā puses ir noteikušas nekontrolētu aprīkojuma nolaišanu uz grīdas (vai citām virsmām) no augstuma, kas pārsniedz 1 (vienu) centimetru, kas rada vai var radīt kaitējumu īpašumam vai veselības apdraudējumu.</p>
+<p class="offer__p">Fiziskās kultūras un veselības uzlabošanas pasākumos grupu nodarbību veidā izmantot savu horeogrāfiju un aprīkojumu, kas nav paredzēts pasākumu programmā.</p>
+<p class="offer__p">Turpināt piedalīties fiziskās kultūras un veselības uzlabošanas pasākumos, izmantojot bojātu, sabojātu vai salauztu aprīkojumu un inventāru.</p>
+<p class="offer__p">Atstāt savu inventāru glabāšanai klubā bez iepriekšējas vienošanās un izpildītāja piekrišanas.</p>
+<p class="offer__p">Pašrocīgi mainīt temperatūras režīmu, apgaismojuma līmeni, televīzijas paneļu virzienu un skaņas pavadījuma skaļumu.</p>
+<p class="offer__p">Pašrocīgi izmantot Kluba mūzikas un citu aprīkojumu, tostarp ieslēgt un/vai demonstrēt audio, video un citus darbus, izmantojot/piemērojot jebkādus datu nesējus un/vai aprīkojumu Kluba telpās.</p>
+<p class="offer__p">Izpildītājs patur tiesības izvēlēties klubā atskaņojamos darbus, kā arī to atskaņošanas kārtību. Ja kluba mūzikas pavadījums traucē, iesakām līdzi ņemt portatīvo atskaņotāju ar austiņām un izmantot to pēc nepieciešamības, ja vien tā izmantošana nerada draudus un/vai kaitējumu veselībai.</p>
+<p class="offer__p">Pārvietot trenažierus, iznest stieņus un hanteles no brīvo svaru zonas, iznest no zonām/studijām/zālēm aprīkojumu, kas paredzēts fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumiem, kā arī mēbeles. Negadījuma gadījumā klubs patur tiesības vienpusēji izbeigt līgumu.</p>
+<p class="offer__p">Lai izvairītos no nelaimes gadījumiem, patstāvīgi izmantot trenažierus, kas paredzēti tikai fiziskās kultūras un veselības uzlabošanas pasākumiem individuālu nodarbību veidā ar Kluba darbinieku.</p>
+<p class="offer__p">Rezervēt trenažierus, aprīkojumu un inventāru, vietas zonās/zālēs fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumiem, kā arī atpūtas krēslus/krēslus SPA zonā (uz laiku, kamēr kluba biedri ilgstoši neatrodas šajās zonās), tostarp, bet ne tikai, atstājot personīgās mantas uz norādītajām iekārtām.</p>
+<p class="offer__p">Patstāvīgi nodarboties zonās/studijās/zālēs, kas paredzētas fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanai, tehniskās pārtraukuma laikā, ko kluba darbinieki izmanto, lai uzkoptu vai uzstādītu, demontētu aprīkojumu, inventāru.</p>
+<p class="offer__p">Nodarboties kluba telpās, kas nav paredzētas fiziskās kultūras un veselības uzlabošanas pasākumu organizēšanai un norisei.</p>
+<p class="offer__p">Ēst vietās, kas paredzētas fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumiem, atpūtas zonās un kluba ģērbtuves telpās. </p>
+<p class="offer__p">Izmantot stikla vai citu trauslu trauku dzērieniem visās kluba zonās. Ir jāizmanto tikai plastmasas/papīra trauki. </p>
+<p class="offer__p">Nostādīt glāzes un citus traukus ar dzērieniem uz trenažieriem, mūzikas iekārtām, aprīkojumu vai mēbelēm, kas nav paredzētas šim nolūkam.</p>
+<p class="offer__p">Lietot košļājamo gumiju patstāvīgu nodarbību laikā vai piedaloties fiziskās kultūras, fiziskās kultūras un veselības pasākumos.</p>
+<p class="offer__p">Smēķēt un/vai atrasties Kluba teritorijā alkohola, narkotiku vai toksisko vielu reibumā (incidenta gadījumā Klubs patur tiesības vienpusēji lauzt Līgumu, nepiešķirot tiesības atjaunot dalību).</p>
+<p class="offer__p">Lietot spēcīgas un aizliegtas zāles bez ārsta rakstiskas atļaujas, ienest un glabāt Kluba teritorijā bīstamas vielas un priekšmetus: sprāgstvielas, sprāgstvielas un priekšmetus, kas ar tām pildīti, saspiestas un sašķidrinātas gāzes, viegli uzliesmojošas šķidrumus, uzliesmojošas cietas vielas, oksidējošas vielas un organiskos peroksīdus, toksiskas vielas, radioaktīvi materiāli, kodīgas un korozīvas vielas, indīgas un toksiskas vielas, ieroči (incidenta gadījumā klubs patur tiesības vienpusēji lauzt līgumu bez tiesībām atjaunot dalību).</p>
+<p class="offer__p">Izmantot nepieklājīgu leksiku, gan sazinoties, gan sarunās pa tālruni Kluba teritorijā, skaļi, necieņīgi un/vai agresīvi runāt, darīt visu, kas var traucēt apkārtējos.</p>
+<p class="offer__p">Komunicēt ar mobilo tālruni, piedaloties fiziskās kultūras, fiziskās kultūras un veselības uzlabošanas pasākumos grupu nodarbību veidā.</p>
+<p class="offer__p">Lietot smaržas, ziedes un citus kosmētikas līdzekļus ar asu smaržu, kā arī līdzekļus, kas bojā vai piesārņo kluba aprīkojumu, telpas un interjeru (KAFEJA, MEDUS, dubļu maskas, eļļas utt.). Atkārtotu noteikumu pārkāpumu gadījumā klubs patur tiesības vienpusēji izbeigt līgumu bez tiesībām atjaunot dalību.</p>
+<p class="offer__p">Atrasties tehniskajās telpās un telpās, kas paredzētas kluba darbiniekiem.</p>
+<p class="offer__p">Pašrocīgi izvietot Kluba teritorijā uzrakstus, paziņojumus, reklāmas materiālus, veikt aptaujas vai īstenot reklāmas, mārketinga, konsultāciju un citas darbības, tostarp uzņēmējdarbību </p>
+<p class="offer__p">Jebkādā veidā vākt un/vai izplatīt personas datus, informāciju par kluba biedru un kluba darbinieku privāto dzīvi.</p>
+<p class="offer__p">Veikt filmu, video un foto uzņemšanu klubā bez izpildītāja rakstiskas atļaujas. </p>
+<p class="offer__p">Ienest un lietot klubā elektriskos sadzīves priekšmetus.</p>
+<p class="offer__p">Izmantot pakalpojumus, papildu pakalpojumus, tostarp pirts kompleksus kluba biedriem ar atklātām brūcēm, traumām, sēnīšu un citām ādas slimībām</p>
+<p class="offer__p">Atrasties Kluba teritorijā, izņemot ģērbtuves, dušas telpas un pie tām esošos pirts kompleksus, ar atklātām ķermeņa daļām.</p>
+<p class="offer__p">Klubā nav atļauts veikt reliģiskos rituālus.</p>
+<p class="offer__p">Nav atļauta nekorekta un aizskaroša uzvedība kluba sporta zonās, ģērbtuves telpās, SPA zonā pret citiem kluba biedriem un kluba darbiniekiem. Nav atļauta seksuāla rakstura darbība. Uzvedība jāatbilst vispārpieņemtajām normām sabiedriskās vietās.</p>
+<p class="offer__p">Klubā nav atļauts veikt komerciālu foto/video uzņemšanu. Tas ietver arī uzņemšanu, kas saistīta ar reklāmu, peļņas gūšanu, kā arī citas līdzīgas darbības bez saskaņošanas ar kluba administrāciju. Komerciālai uzņemšanai pieskaitāmas arī tiešsaistes apmācības, blogeru video apskati un citas foto/video uzņemšanas. </p>
+<p class="offer__p">Nav atļauts izmantot statīvus, filmēšanas stabilizatorus, viedtālruņus un citas tehniskas ierīces foto/video aparatūrai, jo to novietošana kluba teritorijā var p</p>
+<p class="offer__p">Aizliegts liet ūdeni vai citā veidā ietekmēt aprīkojumu SPA zonā.</p>
+<p class="offer__p">Par kluba aproces vai citu elektronisko identifikācijas līdzekļu nozaudēšanu kluba biedrs pēc izpildītāja pieprasījuma ir pienākums samaksāt atbilstošu maksu izpildītāja cenrāža apmērā.</p>
+<p class="offer__p">Klubu locekļu aizmirstās mantas, ja tās atrastas kluba teritorijā, tostarp personīgās higiēnas līdzekļi, netiek pieņemtas glabāšanai. Izpildītājs nav atbildīgs par pazaudētām vai bez uzraudzības atstātām mantām. </p>
+<p class="offer__p">Ja tiek konstatēts, ka trešās personas izmanto klubā reģistrēto personīgo aproču/identifikācijas līdzekļu, izpildītājs ir tiesīgs tos konfiscēt, kā arī vienpusēji atteikt pakalpojumu sniegšanu klubā reģistrētajam loceklim un personām, kas tos izmantojušas.</p>
+<h3 class="offer__h3">21. Izpildītājs nav atbildīgs par kaitējumu kluba locekļa dzīvībai un/vai veselībai, kas radies:</h3>
+<p class="offer__p">sniegt Izpildītājam nepatiesu informāciju par savu veselības stāvokli,</p>
+<p class="offer__p">kluba locekļa akūtu vai hronisku slimību,</p>
+<p class="offer__p">kluba locekļa neuzmanību,</p>
+<p class="offer__p">kluba locekļa apmeklējuma noteikumu un/vai drošības un/vai personīgās higiēnas noteikumu pārkāpumu, izmantojot pakalpojumus. Papildu pakalpojumiem un/vai kluba darbinieku ieteikumiem, ieteikumiem, kas publicēti informācijas un/vai brīdinājuma, aizlieguma zīmēm klubā vai uz iekārtām;</p>
+<p class="offer__p">trešo personu darbības;</p>
+<p class="offer__p">Izpildītājs nav atbildīgs par transportlīdzekļiem, kas atstāti kluba pieguļošajā teritorijā.</p>
+<p class="offer__p">Izpildītājs nav atbildīgs par kaitējumu Līguma īpašnieka/Kluba biedra īpašumam, kas radīts trešo personu darbību rezultātā.</p>
+<p class="offer__p">Par tehniskām neērtībām, kas radušās pilsētas iestāžu, organizāciju, komunālo un ekspluatācijas dienestu veikto sezonālo profilaktisko un/vai remonta darbu dēļ, Izpildītājs nav atbildīgs un nav pienākums maksāt un/vai sniegt Līguma īpašniekam/Kluba biedram jebkādu kompensāciju.</p>
+<p class="offer__p">Ārkārtas situācijās un/vai nepārvaramas varas apstākļos, kas radušies ne izpildītāja vainas dēļ. Izpildītājs var vienpusēji ierobežot sniegto pakalpojumu/papildu pakalpojumu apjomu un kārtību, nemaksājot un/vai nesniedzot līguma īpašniekam/kluba loceklim nekādu kompensāciju.</p>
+<p class="offer__p">Izpildītājs ir tiesīgs vienpusēji mainīt Līguma nosacījumus un nodrošināt Kluba locekļiem līdzīgas pakalpojumus citā Izpildītāja klubā, ja notiek Kluba ēkas vai telpu rekonstrukcija, remonts, kā arī Kluba slēgšana no Izpildītāja neatkarīgu apstākļu dēļ.</p>
+<p class="offer__p">Vajadzības gadījumā kluba loceklis ir tiesīgs iegādāties papildu pakalpojumu par dalības apturēšanu (turpmāk – „Apturēšana”). Dalības apturēšana nozīmē iespēju saglabāt un pārnest dienas, kas palikušas līdz abonementa termiņa beigām. Kluba biedrs/līguma īpašnieks ir tiesīgs pārnest noteiktu dienu skaitu, kas palicis līdz abonementa termiņa beigām, uz norādīto dienu skaitu pakalpojumā „Iesaldēšana”, kurās viņš nav pieprasījis un nepieprasīs no Izpildītāja atbilstošu izpildi par Pamata pakalpojumiem. Pakalpojumu iegādājas, pamatojoties uz kluba locekļa pieteikumu, ko viņš var iesniegt, izmantojot mobilo lietotni vai kluba reģistratūrā. Pakalpojums ir jāapmaksā iepriekš. Izpildītājs sniedz papildu pakalpojumu „7 DIENU IESALDĒŠANA” – iespēju apturēt dalību uz laiku līdz 7 (septiņām) dienām. Pārtraukuma dienu skaits tiek noteikts pēc kluba biedra gribas izpausmes. Pakalpojums uzskatāms par sniegtu vai nu pēc 7 (septiņu) dienu termiņa beigām no brīža, kad izpildītāja iekšējā sistēmā reģistrēta kluba locekļa dalības apturēšanas datums, vai no brīža, kad kluba loceklis ieiet kluba teritorijā, kad izpildītāja iekšējā sistēmā reģistrēta kluba locekļa ieiešanas kluba teritorijā datums. Ja kluba loceklis veic netiešas darbības, kas liecina par viņa vēlmi izmantot pamata pakalpojumu, pakalpojums &quot;Iesaldēšana&quot; tiek uzskatīts par sniegtu pilnā apjomā. Izpildītājs sniedz papildu pakalpojumu &quot;IESALDĒŠANA 30 DIENAS&quot; — iespēju apturēt dalību uz laiku līdz 30 (trīsdesmit) dienām. Pārtraukuma dienu skaits tiek noteikts pēc kluba locekļa gribas izpausmes. Pakalpojums tiek uzskatīts par sniegtu vai nu pēc 30 (trīsdesmit) dienu termiņa beigām no brīža, kad Izpildītāja iekšējā sistēmā ir reģistrēta kluba locekļa dalības apturēšanas datums, vai no brīža, kad kluba loceklis ir ieejis kluba teritorijā, kad Izpildītāja iekšējā sistēmā ir reģistrēta kluba locekļa ieejas datums kluba teritorijā. Ja kluba loceklis veic netiešas darbības, kas liecina par viņa vēlmi izmantot pamata pakalpojumu, pakalpojums „Iesaldēšana” tiek uzskatīts par sniegtu pilnā apjomā. Pakalpojums „Iesaldēšana” nav abonementa līgums.</p>
+<p class="offer__p">Pakalpojuma cena tiek paziņota patērētājiem, publicējot informāciju cenrādī patērētāju stūrītī klubā vai tīmekļa vietnē https://www.fitura.lv. Maksājumu var veikt, norakstot naudas līdzekļus no piesaistītās kartes. Kluba biedrs/līguma īpašnieks ir pienākums norādīt periodu, uz kuru tiks veikta iesaldēšana, proti, tās sākuma un beigu datumu. Ja kluba biedrs/līguma īpašnieks pakalpojuma iesaldēšanas periodā ir ieejis kluba teritorijā, šādas darbības izsaka kluba biedra/līguma īpašnieka atteikšanos no pakalpojuma iesaldēšanas turpmākas izmantošanas, pakalpojums iesaldēšana tiek uzskatīts par sniegtu pilnā apjomā, turpmāka pakalpojumu sniegšana tiek veikta uz vispārējiem pamatiem.</p>
+<p class="offer__p">Kluba loceklis ir tiesīgs iegādāties pakalpojumu „Iesaldēšana” tikai tad, ja pakalpojuma iegādes brīdī ir spēkā esošs maksājumu periods. Līguma termiņš pakalpojuma „Iesaldēšana” iegādes brīdī nedrīkst būt mazāks par 1 (vienu) kalendāro dienu.</p>
+<p class="offer__p">Viesu apmeklējumi, lai izmēģinātu pakalpojumus klubā, tiek veikti tikai izpildītāja rīkotu īpašu akciju ietvaros un izpildītāja noteiktos nosacījumos, vai arī iegādājoties maksas pakalpojumu „Viesu apmeklējums”.</p>
+<p class="offer__p">Jebkāda informācija (tostarp: vārds, uzvārds, dzimšanas datums, adrese, tālruņa numuri, informācija par darbu, apmeklējumu kārtību, Kluba pakalpojumu izmantošanu un cita dzimšanas datums, adrese, tālruņa numuri, informācija par darbu, apmeklējumu kārtību, Kluba pakalpojumu izmantošanu un cita informācija) par Kluba biedriem, potenciālajiem vai iespējamajiem Kluba biedriem, kā arī par Kluba darbiniekiem ir konfidenciāla, un Izpildītājs, kā arī Kluba darbinieki to nedrīkst sniegt/izpaust kluba biedriem, potenciālajiem kluba biedriem un trešajām personām, izņemot gadījumus, kas paredzēti Latvijas Republikas normatīvajos aktos </p>
+<p class="offer__p">Vajadzības gadījumā un lai nodrošinātu kluba biedru komfortu un drošību, izpildītājs patur tiesības vienpusēji veikt izmaiņas un papildinājumus noteikumos. Izmaiņas, papildinājumi noteikumos, kā arī kluba tiesību izmantošana, kas paredzētas noteikumos, līgumā/vienošanās, nav pamats, lai kluba biedriem piešķirtu jebkādu kompensāciju.</p>
+<p class="offer__p">Klubu biedrs, sākot izmantot Pakalpojumus, Papildu pakalpojumus, apstiprina, ka viņam nav medicīnisku kontrindikāciju apmeklēt Klubu un izmantot Kluba pakalpojumus.</p>
+<p class="offer__p">Izpildītājs vērš uzmanību uz to, ka Kluba locekļu noteikumu ievērošana pozitīvi ietekmēs katra Kluba locekļa veselību un novērsīs iespējamo negatīvo seku rašanos.</p>
+<p class="offer__p">Ja tiek pārkāpts kāds no Noteikumu punktiem, Izpildītājs ir tiesīgs smagas noteikumu pārkāpšanas gadījumā lauzt Līgumu, bet citos gadījumos izteikt brīdinājumu, atkārtotas pārkāpšanas gadījumā Izpildītājs ir tiesīgs vienpusēji lauzt Līgumu, nepiešķirot tiesības atjaunot dalību Klubā.</p>
+<h2 class="offer__h2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VĒLAM JŪS VESELĪBU, SPORTA PANĀKUMUS UN</h2>
+<h2 class="offer__h2">PATĪKAMU ATPAUTU!</h2>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
