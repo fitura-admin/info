@@ -416,13 +416,20 @@ function buildSlider(root) {
     animateTo(index);
   };
 
-  viewport.addEventListener('mousedown', onDown);
-  window.addEventListener('mousemove', onMove);
-  window.addEventListener('mouseup', onUp);
+  // IMPORTANT:
+  // Desktop should be controlled only via arrows.
+  // Keep swipe/drag only for touch-like devices (mobile/tablet).
+  const allowTouchSwipe = window.matchMedia && (
+    window.matchMedia('(hover: none)').matches ||
+    window.matchMedia('(pointer: coarse)').matches ||
+    window.matchMedia('(max-width: 1024px)').matches
+  );
 
-  viewport.addEventListener('touchstart', onDown, { passive: true });
-  viewport.addEventListener('touchmove', onMove, { passive: true });
-  viewport.addEventListener('touchend', onUp);
+  if (allowTouchSwipe) {
+    viewport.addEventListener('touchstart', onDown, { passive: true });
+    viewport.addEventListener('touchmove', onMove, { passive: true });
+    viewport.addEventListener('touchend', onUp);
+  }
 
   // Rebuild on resize (breakpoint change)
   let lastPerView = perView;

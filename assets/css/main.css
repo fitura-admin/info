@@ -877,6 +877,8 @@ to {
   height: 100%;
   object-fit: cover;
   display: block;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .gallery__arrow {
