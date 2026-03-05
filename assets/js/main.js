@@ -427,7 +427,12 @@ function buildSlider(root) {
 
   if (allowTouchSwipe) {
     viewport.addEventListener('touchstart', onDown, { passive: true });
-    viewport.addEventListener('touchmove', onMove, { passive: true });
+    // touchmove must be non-passive so we can prevent page scrolling from
+    // stealing horizontal swipes; otherwise it can feel like swipe is broken.
+    viewport.addEventListener('touchmove', (e) => {
+      if (isDown) e.preventDefault();
+      onMove(e);
+    }, { passive: false });
     viewport.addEventListener('touchend', onUp);
   }
 

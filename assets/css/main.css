@@ -856,6 +856,13 @@ to {
   border-radius: calc(24 * var(--px));
 }
 
+/* Allow comfortable vertical scrolling while letting JS handle horizontal swipes */
+@media (hover: none), (pointer: coarse) {
+  .gallery__viewport {
+    touch-action: pan-y;
+  }
+}
+
 .gallery__track {
   display: flex;
   gap: calc(26 * var(--px));
