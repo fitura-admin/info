@@ -871,6 +871,7 @@ to {
 }
 
 .gallery__slide {
+  position: relative;
   flex: 0 0 auto;
   width: calc(682 * var(--px));
   height: calc(350 * var(--px));
@@ -886,6 +887,28 @@ to {
   display: block;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.gallery__badge {
+  position: absolute;
+  top: calc(18 * var(--px));
+  left: calc(18 * var(--px));
+  padding: calc(8 * var(--px)) calc(16 * var(--px));
+  border-radius: calc(999 * var(--px));
+  background: #7c1fff;
+  color: #fff;
+  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+    sans-serif;
+  font-size: calc(14 * var(--px));
+  font-weight: 700;
+  letter-spacing: calc(1 * var(--px));
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 calc(4 * var(--px)) calc(12 * var(--px))
+    rgba(43, 14, 58, 0.25);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .gallery__arrow {
