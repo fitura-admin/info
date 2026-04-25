@@ -58,7 +58,7 @@
     };
 
     // ---------------------------
-    // Ensure Encode Sans Expanded applies to timer digits (fix flash / wrong font)
+    // Ensure Inter applies to timer digits (fix flash / wrong font)
     // ---------------------------
     const ensureTimerFont = async () => {
       const timer = document.querySelector(".timer");
@@ -67,8 +67,8 @@
       try {
         if (document.fonts && document.fonts.load) {
           // Force-load exact weights used by the timer
-          const load600 = document.fonts.load('600 128px "Encode Sans Expanded"');
-          const load400 = document.fonts.load('400 96px "Encode Sans Expanded"');
+          const load600 = document.fonts.load('600 128px "Inter"');
+          const load400 = document.fonts.load('400 96px "Inter"');
 
           // Don't hang forever
           await Promise.race([
@@ -79,7 +79,7 @@
       } catch (_) {}
 
       // Apply inline font-family (wins over any CSS overrides)
-      const ff = '"Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+      const ff = '"Inter", system-ui, -apple-system, Segoe UI, Arial, sans-serif';
       timer.querySelectorAll(".timer__num, .timer__sep, .timer__label").forEach((el) => {
         el.style.fontFamily = ff;
       });

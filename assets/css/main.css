@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "TT Norms Tochka";
-  src: url("../fonts/TT Norms Tochka Extended Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "TT Norms Tochka";
-  src: url("../fonts/TT Norms Tochka Extended DemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
-
 .header {
   position: absolute;
   top: 0;
@@ -64,7 +50,7 @@
 }
 
 .header__link {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(25 * var(--px));
@@ -97,7 +83,7 @@
 }
 
 .header__lang {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(27 * var(--px));
@@ -193,7 +179,7 @@
 
 .hero__title {
   margin: 0;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 700;
   font-size: calc(115 * var(--px));
@@ -205,7 +191,7 @@
 
 .hero__place {
   margin: calc(40 * var(--px)) 0 0;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 400;
   font-size: calc(25 * var(--px));
@@ -233,7 +219,7 @@
 }
 
 .join__text {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(32 * var(--px));
@@ -320,7 +306,7 @@
 
 .hero__offerTitle {
   margin: 0;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 700;
   font-size: calc(54 * var(--px));
@@ -343,7 +329,7 @@
 
 .hero__offerSub {
   margin: calc(14 * var(--px)) 0 0;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 500;
   font-size: calc(28 * var(--px));
@@ -386,7 +372,7 @@
 }
 
 .timer__num {
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(128 * var(--px));
@@ -411,7 +397,7 @@
 
 .timer__label {
   margin-top: calc(55 * var(--px));
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 500;
   font-size: calc(16 * var(--px));
@@ -431,7 +417,7 @@
   justify-content: center;
   padding: calc(18 * var(--px)) calc(64 * var(--px));
   border-radius: var(--radius-btn);
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(32 * var(--px));
@@ -636,7 +622,7 @@ to {
 .plan__title {
   margin: 0 0 calc(44 * var(--px));
   text-align: center;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(64 * var(--px));
@@ -706,7 +692,7 @@ to {
 
 .plan-card__name {
   margin: 0;
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 800;
   font-size: calc(30 * var(--px));
@@ -715,7 +701,7 @@ to {
 }
 
 .plan-card__age {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 500;
   font-size: calc(14 * var(--px));
@@ -725,7 +711,7 @@ to {
 
 .plan-card__desc {
   margin: calc(10 * var(--px)) 0 0;
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 400;
   font-size: calc(15 * var(--px));
@@ -739,7 +725,7 @@ to {
   display: flex;
   align-items: baseline;
   gap: calc(6 * var(--px));
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
 }
 
@@ -763,7 +749,7 @@ to {
 
 .plan-card__fee {
   margin: calc(10 * var(--px)) 0 0;
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-size: calc(13.5 * var(--px));
   line-height: 130%;
@@ -774,7 +760,7 @@ to {
   list-style: none;
   margin: calc(18 * var(--px)) 0 calc(18 * var(--px));
   padding: 0;
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   color: rgba(0, 0, 0, 0.75);
   font-size: calc(14 * var(--px));
@@ -801,7 +787,7 @@ to {
   border-radius: calc(999 * var(--px));
   background: #7c1fff;
   color: #ffffff;
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(20 * var(--px));
@@ -880,7 +866,7 @@ to {
 .gallery__title {
   margin: 0;
   text-align: center;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(64 * var(--px));
@@ -941,7 +927,7 @@ to {
   border-radius: calc(999 * var(--px));
   background: #7c1fff;
   color: #fff;
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-size: calc(14 * var(--px));
   font-weight: 700;
@@ -1092,7 +1078,7 @@ to {
 .contact__title {
   margin: 0 0 calc(46 * var(--px));
   text-align: center;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 600;
   font-size: calc(64 * var(--px));
@@ -1171,7 +1157,7 @@ to {
 }
 
 .contact__text {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-size: calc(18 * var(--px));
   line-height: 1.35;
@@ -1244,7 +1230,7 @@ to {
 }
 
 .footer__link {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-size: calc(22 * var(--px));
   line-height: 120%;
@@ -1321,14 +1307,6 @@ to {
   --container-pad: calc(48 * var(--px));
 }
 
-@font-face {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
-    sans-serif;
-  font-weight: 400 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -1381,7 +1359,7 @@ button {
 
 .footer__inner {
   padding: 0 var(--container-pad);
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-size: calc(14 * var(--px));
 }
@@ -1542,7 +1520,7 @@ body.is-loaded #app {
 .preloader__text {
   position: absolute;
   bottom: -34px;
-  font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI,
     Roboto, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 0.18em;
@@ -1640,7 +1618,7 @@ body.is-loaded .preloader__wrap {
 }
 
 .cookie__text {
-  font-family: "TT Norms Tochka", "TT Norms Medium", "TTNorms", system-ui,
+  font-family: "Inter", "TT Norms Medium", "TTNorms", system-ui,
     -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-size: calc(20 * var(--px));
   line-height: 1.35;
@@ -1659,7 +1637,7 @@ body.is-loaded .preloader__wrap {
   cursor: pointer;
   background: #6b2bff;
   color: #fff;
-  font-family: "TT Norms Tochka", "TT Norms Medium", "TTNorms", system-ui,
+  font-family: "Inter", "TT Norms Medium", "TTNorms", system-ui,
     -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-size: calc(20 * var(--px));
   line-height: 1;
@@ -1823,7 +1801,7 @@ body.is-loaded .preloader__wrap {
 }
 
 .footer__link {
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-size: calc(22 * var(--px));
   line-height: 120%;
@@ -2162,7 +2140,7 @@ body.is-loaded .preloader__wrap {
   }
 
   .mnav__link {
-    font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
       sans-serif;
     font-weight: 600;
     font-size: calc(34 * var(--px));
@@ -2210,7 +2188,7 @@ body.is-loaded .preloader__wrap {
     border: 1px solid rgba(255,255,255,0.10);
     box-shadow: inset 0 0 0 calc(1 * var(--px)) rgba(255,255,255,0.06);
     text-align: center;
-    font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     font-weight: 600;
     font-size: calc(36 * var(--px));
     line-height: 1.1;
@@ -2239,7 +2217,7 @@ body.is-loaded .preloader__wrap {
   display: inline-flex;
   align-items: center;
   gap: calc(24 * var(--px));
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-weight: 600;
   font-size: calc(100 * var(--px));
   color: rgba(255,255,255,0.88);
@@ -2259,7 +2237,7 @@ body.is-loaded .preloader__wrap {
   display: flex;
   align-items: flex-start;
   gap: calc(24 * var(--px));
-  font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-weight: 400;
   font-size: calc(45 * var(--px));
   line-height: 1.25;
@@ -2287,7 +2265,7 @@ body.is-loaded .preloader__wrap {
     border-radius: calc(999 * var(--px));
     background: rgba(244,240,255,0.92);
     color: #321d3f;
-    font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     font-weight: 700;
     font-size: calc(44 * var(--px));
     text-decoration: none;
@@ -2379,7 +2357,7 @@ body.menu-open {
     align-items: center;
     justify-content: space-between;
     gap: calc(12 * var(--px));
-    font-family: "TT Norms Tochka", system-ui, -apple-system, Segoe UI, Arial,
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Arial,
       sans-serif;
     font-weight: 600;
     font-size: calc(18 * var(--px));
@@ -2824,4 +2802,121 @@ body.menu-open {
   .gallery__dots {
     display: flex;
   }
+}
+
+/* =====================================================================
+   Design refresh — lighter palette, frosted-glass cards, better legibility
+   Appended late so it overrides earlier section rules without touching them.
+   ===================================================================== */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Slightly tighten display headings — Inter looks sharper this way */
+.hero__title,
+.plan__title,
+.gallery__title,
+.contact__title {
+  letter-spacing: -0.01em;
+}
+
+/* Plan section: pale lilac canvas with soft brand-tinted blobs (gives the glass cards something to refract) */
+.plan {
+  background:
+    radial-gradient(
+      ellipse 60% 50% at 12% 8%,
+      rgba(124, 31, 255, 0.10) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 70% 50% at 92% 92%,
+      rgba(184, 77, 255, 0.10) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 35% at 70% 30%,
+      rgba(255, 110, 200, 0.07) 0%,
+      transparent 70%
+    ),
+    #faf9ff;
+}
+
+/* Plan cards as frosted glass with gradient color tint */
+.plan-card {
+  border-radius: calc(22 * var(--px));
+  border: calc(1 * var(--px)) solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(calc(18 * var(--px))) saturate(1.15);
+  -webkit-backdrop-filter: blur(calc(18 * var(--px))) saturate(1.15);
+  box-shadow:
+    0 calc(20 * var(--px)) calc(50 * var(--px)) rgba(43, 14, 58, 0.18),
+    inset 0 calc(1 * var(--px)) 0 rgba(255, 255, 255, 0.45);
+}
+
+.plan-card--full {
+  background: linear-gradient(
+    155deg,
+    rgba(124, 31, 255, 0.82) 0%,
+    rgba(95, 27, 255, 0.7) 100%
+  );
+}
+
+.plan-card--duo {
+  background: linear-gradient(
+    155deg,
+    rgba(60, 22, 90, 0.85) 0%,
+    rgba(43, 14, 58, 0.78) 100%
+  );
+}
+
+.plan-card--junior {
+  background: linear-gradient(
+    155deg,
+    rgba(184, 77, 255, 0.82) 0%,
+    rgba(150, 60, 220, 0.7) 100%
+  );
+}
+
+/* Plan list items: lighter dividers, more breathing room */
+.plan-list__item {
+  border-bottom-color: rgba(124, 31, 255, 0.18);
+}
+
+/* Contact card: clean white frosted glass */
+.contact__card {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(calc(18 * var(--px))) saturate(1.15);
+  -webkit-backdrop-filter: blur(calc(18 * var(--px))) saturate(1.15);
+  border: calc(1 * var(--px)) solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 calc(20 * var(--px)) calc(50 * var(--px)) rgba(43, 14, 58, 0.14),
+    inset 0 calc(1 * var(--px)) 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Hero overlay: a touch lighter so the photo breathes through */
+.hero__overlay {
+  background:
+    linear-gradient(
+      0.05deg,
+      rgba(18, 1, 27, 0.82) 16%,
+      rgba(43, 14, 58, 0.18) 87%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32));
+}
+
+/* Gallery slides: subtle border and lifted shadow to feel airier */
+.gallery__slide {
+  border: calc(1 * var(--px)) solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 calc(16 * var(--px)) calc(40 * var(--px)) rgba(43, 14, 58, 0.12);
+}
+
+/* Coming-soon badge: glass treatment to match new design language */
+.gallery__badge {
+  background: rgba(124, 31, 255, 0.78);
+  backdrop-filter: blur(calc(8 * var(--px))) saturate(1.2);
+  -webkit-backdrop-filter: blur(calc(8 * var(--px))) saturate(1.2);
+  border: calc(1 * var(--px)) solid rgba(255, 255, 255, 0.35);
 }
