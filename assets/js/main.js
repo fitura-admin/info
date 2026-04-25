@@ -46,7 +46,16 @@
     // Config
     // ---------------------------
     const JOIN_PULSE_MS = 2000; // <-- change this value to control "Join us" pulse interval
-    const DEFAULT_COUNTDOWN_HOURS = 36; // if no data-end specified
+
+    // Countdown is always clamped to [MIN_HOURS, MAX_HOURS].
+    // When the remaining time drops below MIN_HOURS, a new target is generated.
+    const MIN_HOURS = 1;
+    const MAX_HOURS = 12;
+    const pickEndAt = () => {
+      // Random duration between 2h and 11h — comfortably inside the [1, 12] bounds
+      const hours = 2 + Math.random() * 9;
+      return Date.now() + hours * 60 * 60 * 1000;
+    };
 
     // ---------------------------
     // Ensure Encode Sans Expanded applies to timer digits (fix flash / wrong font)
@@ -94,7 +103,7 @@
     }
 
     // ---------------------------
-    // Timer (stable, no drift, no jitter)
+    // Timer (stable, no drift, clamped 1–12h)
     // ---------------------------
     const timer = document.querySelector(".timer");
     if (timer) {
@@ -103,29 +112,29 @@
 
       const pad2 = (n) => String(n).padStart(2, "0");
 
-      let endISO = timer.getAttribute("data-end") || "";
-      let endAt = null;
-
-      // Persist countdown between refreshes when no fixed end date is provided
-      // (So the timer doesn't "reset" on reload)
+      const MIN_MS = MIN_HOURS * 60 * 60 * 1000;
+      const MAX_MS = MAX_HOURS * 60 * 60 * 1000;
       const STORAGE_KEY = "fitura_hero_timer_endAt";
 
-      if (!endISO) {
+      const saveEnd = (endAt) => {
+        try { localStorage.setItem(STORAGE_KEY, String(endAt)); } catch (_) {}
+      };
+      // Accept a saved end only if it sits within the [MIN, MAX] window.
+      // Out-of-range values (stale, tampered, or from the old 36h version) are ignored.
+      const readSavedEnd = () => {
         const saved = Number(localStorage.getItem(STORAGE_KEY) || "");
-        if (Number.isFinite(saved) && saved > Date.now()) {
-          endAt = saved;
-        } else {
-          endAt = Date.now() + DEFAULT_COUNTDOWN_HOURS * 60 * 60 * 1000;
-          try { localStorage.setItem(STORAGE_KEY, String(endAt)); } catch (_) {}
-        }
-      } else {
-        const parsed = Date.parse(endISO);
-        endAt = Number.isFinite(parsed)
-          ? parsed
-          : (Date.now() + DEFAULT_COUNTDOWN_HOURS * 60 * 60 * 1000);
+        if (!Number.isFinite(saved)) return null;
+        const remaining = saved - Date.now();
+        if (remaining < MIN_MS || remaining > MAX_MS) return null;
+        return saved;
+      };
+
+      let endAt = readSavedEnd();
+      if (endAt == null) {
+        endAt = pickEndAt();
+        saveEnd(endAt);
       }
 
-      const elD = timer.querySelector('[data-t="d"]');
       const elH = timer.querySelector('[data-t="h"]');
       const elM = timer.querySelector('[data-t="m"]');
       const elS = timer.querySelector('[data-t="s"]');
@@ -134,28 +143,23 @@
 
       const render = () => {
         const now = Date.now();
-        const diff = Math.max(0, endAt - now);
-        const totalSec = Math.floor(diff / 1000);
+        let diff = endAt - now;
 
-        const d = Math.floor(totalSec / (24 * 3600));
-        const h = Math.floor((totalSec % (24 * 3600)) / 3600);
+        // Spec: never show less than MIN_HOURS remaining — regenerate before we cross that floor.
+        if (diff < MIN_MS) {
+          endAt = pickEndAt();
+          saveEnd(endAt);
+          diff = endAt - now;
+        }
+
+        const totalSec = Math.floor(diff / 1000);
+        const h = Math.floor(totalSec / 3600);
         const m = Math.floor((totalSec % 3600) / 60);
         const s = totalSec % 60;
 
-        if (elD) elD.textContent = pad2(d);
         if (elH) elH.textContent = pad2(h);
         if (elM) elM.textContent = pad2(m);
         if (elS) elS.textContent = pad2(s);
-
-        if (totalSec <= 0) {
-          timer.classList.add("is-done");
-          try {
-            const endISO = timer.getAttribute("data-end") || "";
-            if (!endISO) localStorage.removeItem("fitura_hero_timer_endAt");
-          } catch (_) {}
-          if (tId) clearTimeout(tId);
-          return;
-        }
 
         // align next update to the next full second to avoid drift
         const msToNext = 1000 - (now % 1000) + 2;

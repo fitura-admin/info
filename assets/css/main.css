@@ -285,17 +285,60 @@
 }
 
 .hero__offer {
+  position: relative;
   margin-top: calc(100 * var(--px));
+  padding: calc(26 * var(--px)) calc(56 * var(--px));
+  border-radius: calc(28 * var(--px));
+  background:
+    linear-gradient(
+      135deg,
+      rgba(124, 31, 255, 0.32) 0%,
+      rgba(255, 64, 180, 0.18) 55%,
+      rgba(124, 31, 255, 0.32) 100%
+    );
+  border: calc(1 * var(--px)) solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(calc(10 * var(--px)));
+  -webkit-backdrop-filter: blur(calc(10 * var(--px)));
+  box-shadow:
+    0 calc(12 * var(--px)) calc(44 * var(--px)) rgba(124, 31, 255, 0.38),
+    inset 0 calc(1 * var(--px)) 0 rgba(255, 255, 255, 0.28);
+  animation: heroOfferGlow 3.4s ease-in-out infinite;
+}
+
+@keyframes heroOfferGlow {
+  0%, 100% {
+    box-shadow:
+      0 calc(12 * var(--px)) calc(44 * var(--px)) rgba(124, 31, 255, 0.38),
+      inset 0 calc(1 * var(--px)) 0 rgba(255, 255, 255, 0.28);
+  }
+  50% {
+    box-shadow:
+      0 calc(14 * var(--px)) calc(64 * var(--px)) rgba(124, 31, 255, 0.55),
+      inset 0 calc(1 * var(--px)) 0 rgba(255, 255, 255, 0.4);
+  }
 }
 
 .hero__offerTitle {
   margin: 0;
   font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
-  font-weight: 600;
-  font-size: calc(48 * var(--px));
+  font-weight: 700;
+  font-size: calc(54 * var(--px));
   line-height: 1;
   text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #f1e6ff 45%,
+    #ffffff 55%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: none;
+  letter-spacing: calc(0.5 * var(--px));
 }
 
 .hero__offerSub {
@@ -303,9 +346,10 @@
   font-family: "Encode Sans Expanded", system-ui, -apple-system, Segoe UI, Arial,
     sans-serif;
   font-weight: 500;
-  font-size: calc(32 * var(--px));
-  line-height: 1;
-  opacity: 0.85;
+  font-size: calc(28 * var(--px));
+  line-height: 1.15;
+  color: rgba(255, 255, 255, 0.92);
+  opacity: 1;
 }
 
 .timer {
